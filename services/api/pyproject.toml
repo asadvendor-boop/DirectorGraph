@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "directorgraph-api"
+version = "0.1.0"
+description = "Self-correcting, budget-aware AI showrunner built on Qwen Cloud"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "uvicorn[standard]>=0.34,<1.0",
+  "sqlalchemy>=2.0,<3.0",
+  "psycopg[binary]>=3.2,<4.0",
+  "pydantic>=2.10,<3.0",
+  "pydantic-settings>=2.7,<3.0",
+  "openai>=1.65,<3.0",
+  "httpx>=0.28,<1.0",
+  "tenacity>=9.0,<10.0",
+  "oss2>=2.19,<3.0",
+  "aliyun-python-sdk-core==2.16.0",
+  "aliyun-python-sdk-kms==2.16.5",
+  "Pillow>=12.2.0,<13.0",
+  "python-multipart>=0.0.20,<1.0",
+  "aiofiles>=24.1,<25.0",
+  "structlog>=25.1,<26.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9.0",
+  "pytest-asyncio>=0.25,<1.0",
+  "ruff>=0.9,<1.0",
+  "coverage>=7.6,<8.0",
+  "pip-audit>=2.10,<3.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["integration: runs the FFmpeg end-to-end media pipeline"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "B008"]

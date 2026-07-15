@@ -1,0 +1,25 @@
+{
+  "Version": "1",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "oss:GetBucketInfo",
+        "oss:ListObjects"
+      ],
+      "Resource": [
+        "acs:oss:${ALIBABA_REGION}:${ALIBABA_ACCOUNT_ID}:${OSS_BUCKET}"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "oss:GetObject",
+        "oss:PutObject"
+      ],
+      "Resource": [
+        "acs:oss:${ALIBABA_REGION}:${ALIBABA_ACCOUNT_ID}:${OSS_BUCKET}/*"
+      ]
+    }
+  ]
+}

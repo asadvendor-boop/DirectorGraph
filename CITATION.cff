@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: DirectorGraph
+type: software
+message: "If you use DirectorGraph, cite this repository."
+authors:
+  - family-names: DirectorGraph
+    given-names: Contributors
+version: 0.1.0
+date-released: 2026-06-23
+license: MIT

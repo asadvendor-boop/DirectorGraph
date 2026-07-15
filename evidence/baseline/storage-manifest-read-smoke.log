@@ -1,0 +1,11 @@
+{
+  "durable_object_key_count": 3,
+  "expires_seconds_requested": 60,
+  "manifest_key": "projects/bccd16da-10ef-4404-9eca-eb301fca09d9/manifest.json",
+  "project_id": "bccd16da-10ef-4404-9eca-eb301fca09d9",
+  "schema": "directorgraph.storage-manifest-read.v1",
+  "signature_stored_in_manifest": false,
+  "signed_object_count": 3,
+  "signed_url_scheme": "local-oss",
+  "status": "passed"
+}

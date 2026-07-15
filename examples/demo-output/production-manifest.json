@@ -1,0 +1,1943 @@
+{
+  "schema": "directorgraph.production-manifest.v1",
+  "generated_at": "2026-06-23T19:55:56.270232+00:00",
+  "execution_mode": "mock (validated orchestration preview)",
+  "project": {
+    "id": "a9cccb35-e887-4c48-b2e9-6058dc566667",
+    "title": "The Last Delivery",
+    "status": "completed",
+    "brief": {
+      "title": "The Last Delivery",
+      "premise": "Every night a small courier robot leaves a package at the same apartment. On its final night before decommissioning, the door finally opens.",
+      "genre": "science-fiction drama",
+      "tone": "cinematic, intimate, emotionally resonant",
+      "target_audience": "global short-form drama viewers",
+      "duration_seconds": 21,
+      "aspect_ratio": "9:16",
+      "language": "English",
+      "visual_style": "grounded cinematic realism, controlled lighting, shallow depth of field",
+      "budget_usd": 18.0,
+      "repair_reserve_percent": 18,
+      "seed": 20260710,
+      "required_prop": "red paper crane"
+    },
+    "plan": {
+      "schema_version": "1.0",
+      "title": "The Last Delivery",
+      "logline": "Every night a small courier robot leaves a package at the same apartment. On its final night before decommissioning, the door finally opens.",
+      "theme": "Hope survives through repeated acts of care.",
+      "synopsis": "On its final route, a weathered courier robot returns to the one apartment that has never opened. The ritual finally receives an answer.",
+      "visual_rules": [
+        "Cold hallway light contrasts with warm light behind apartment 4B.",
+        "The red paper crane stays saturated and legible whenever required.",
+        "Mira's green coat and Courier-7's amber light never change.",
+        "No generated typography or brand marks inside footage."
+      ],
+      "audio_rules": [
+        "Sparse rain ambience leaves space for dialogue.",
+        "Courier-7 sounds gentle rather than comic.",
+        "Music rises only after the door opens."
+      ],
+      "characters": [
+        {
+          "id": "C01",
+          "name": "Mira",
+          "role": "The resident who stopped opening the door",
+          "appearance": "late twenties, expressive dark eyes, short black hair",
+          "wardrobe": "dark forest-green coat over neutral sleepwear",
+          "voice_direction": "quiet and guarded, then relieved warmth",
+          "motivation": "to know whether hope can survive being unanswered",
+          "reference_prompt": "cinematic reference, Mira, short black hair, forest-green coat, consistent face, neutral backdrop"
+        },
+        {
+          "id": "C02",
+          "name": "Courier-7",
+          "role": "An aging delivery robot completing its final route",
+          "appearance": "small weathered cream robot with one amber status light",
+          "wardrobe": "scratched courier shell, blue route stripe, no logos",
+          "voice_direction": "gentle synthetic voice, precise but tender",
+          "motivation": "to complete the promise encoded in its route",
+          "reference_prompt": "small weathered cream courier robot, amber light, blue stripe, friendly proportions, no logo"
+        }
+      ],
+      "beats": [
+        {
+          "id": "B01",
+          "name": "The final route",
+          "beat_type": "hook",
+          "objective": "Signal that tonight is the robot's last chance",
+          "emotional_shift": "curiosity to concern",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B02",
+          "name": "The ritual",
+          "beat_type": "setup",
+          "objective": "Establish the unanswered delivery and recurring prop",
+          "emotional_shift": "concern to tenderness",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B03",
+          "name": "Time accumulated",
+          "beat_type": "escalation",
+          "objective": "Show that the robot has returned for years",
+          "emotional_shift": "tenderness to ache",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B04",
+          "name": "Shutdown warning",
+          "beat_type": "escalation",
+          "objective": "Introduce an irreversible deadline",
+          "emotional_shift": "ache to urgency",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B05",
+          "name": "The door opens",
+          "beat_type": "reveal",
+          "objective": "Reverse the pattern and reveal Mira",
+          "emotional_shift": "urgency to shock",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B06",
+          "name": "Recognition",
+          "beat_type": "climax",
+          "objective": "Deliver the meaning of the repeated route",
+          "emotional_shift": "shock to relief",
+          "duration_seconds": 3
+        },
+        {
+          "id": "B07",
+          "name": "Promise delivered",
+          "beat_type": "resolution",
+          "objective": "End on a visual transfer of hope",
+          "emotional_shift": "relief to bittersweet peace",
+          "duration_seconds": 3
+        }
+      ],
+      "shots": [
+        {
+          "id": "S01",
+          "sequence": 1,
+          "beat_id": "B01",
+          "title": "Last route",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Signal that tonight is the robot's last chance",
+          "characters": [
+            "C02"
+          ],
+          "action": "Courier-7 rolls into the empty hallway as its amber light falters.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "weary determination",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "wide establishing shot",
+            "movement": "slow low dolly",
+            "angle": "knee height",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [],
+            "start_state": {},
+            "end_state": {
+              "robot": "outside 4B"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S01: Courier-7 rolls into the empty hallway as its amber light falters. narrow apartment hallway at night, rain-lit window at the far end. wide establishing shot, knee height, weary determination. Show the environment clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Courier-7 rolls into the empty hallway as its amber light falters. Camera: slow low dolly, wide establishing shot, knee height. Emotion: weary determination. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.96,
+          "renderer": "wan_i2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        {
+          "id": "S02",
+          "sequence": 2,
+          "beat_id": "B02",
+          "title": "The paper promise",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Establish the unanswered delivery and recurring prop",
+          "characters": [
+            "C02"
+          ],
+          "action": "Courier-7 places a parcel topped with a red paper crane at the closed door.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "ritualistic tenderness",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "close-up insert",
+            "movement": "controlled lateral slide",
+            "angle": "floor level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "parcel": "in gripper"
+            },
+            "end_state": {
+              "parcel": "on mat",
+              "prop": "on parcel"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S02: Courier-7 places a parcel topped with a red paper crane at the closed door. narrow apartment hallway at night, rain-lit window at the far end. close-up insert, floor level, ritualistic tenderness. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Courier-7 places a parcel topped with a red paper crane at the closed door. Camera: controlled lateral slide, close-up insert, floor level. Emotion: ritualistic tenderness. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.52,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        {
+          "id": "S03",
+          "sequence": 3,
+          "beat_id": "B03",
+          "title": "Every night",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Show that the robot has returned for years",
+          "characters": [
+            "C02"
+          ],
+          "action": "A compressed montage shows rain, dust, and changing seasons while the same robot returns.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "steadfast loneliness",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "locked medium wide",
+            "movement": "time-lapse push-in",
+            "angle": "eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "door": "closed"
+            },
+            "end_state": {
+              "robot": "more weathered"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S03: A compressed montage shows rain, dust, and changing seasons while the same robot returns. narrow apartment hallway at night, rain-lit window at the far end. locked medium wide, eye level, steadfast loneliness. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. A compressed montage shows rain, dust, and changing seasons while the same robot returns. Camera: time-lapse push-in, locked medium wide, eye level. Emotion: steadfast loneliness. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.66,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        {
+          "id": "S04",
+          "sequence": 4,
+          "beat_id": "B04",
+          "title": "Power at one percent",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Introduce an irreversible deadline",
+          "characters": [
+            "C02"
+          ],
+          "action": "The amber light flickers; Courier-7 nudges the parcel to the threshold.",
+          "dialogue": "Route expires at dawn.",
+          "narration": null,
+          "emotion": "quiet urgency",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "macro to medium",
+            "movement": "rack focus to door",
+            "angle": "robot eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "power": "one percent"
+            },
+            "end_state": {
+              "power": "critical"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S04: The amber light flickers; Courier-7 nudges the parcel to the threshold. narrow apartment hallway at night, rain-lit window at the far end. macro to medium, robot eye level, quiet urgency. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. The amber light flickers; Courier-7 nudges the parcel to the threshold. Camera: rack focus to door, macro to medium, robot eye level. Emotion: quiet urgency. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.71,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        {
+          "id": "S05",
+          "sequence": 5,
+          "beat_id": "B05",
+          "title": "The impossible sound",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Reverse the pattern and reveal Mira",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "The lock turns. The door opens and warm light cuts across Courier-7.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "stunned recognition",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "medium reveal",
+            "movement": "slow push through light",
+            "angle": "eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "door": "closed",
+              "Mira": "unseen"
+            },
+            "end_state": {
+              "door": "open",
+              "Mira": "visible",
+              "prop": "between them"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S05: The lock turns. The door opens and warm light cuts across Courier-7. narrow apartment hallway at night, rain-lit window at the far end. medium reveal, eye level, stunned recognition. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. The lock turns. The door opens and warm light cuts across Courier-7. Camera: slow push through light, medium reveal, eye level. Emotion: stunned recognition. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.98,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        {
+          "id": "S06",
+          "sequence": 6,
+          "beat_id": "B06",
+          "title": "You came back",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Deliver the meaning of the repeated route",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "Mira kneels, takes the red paper crane, and meets Courier-7's flickering light.",
+          "dialogue": "You came back.\nI never stopped.",
+          "narration": null,
+          "emotion": "recognition into relief",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "intimate close-ups",
+            "movement": "gentle handheld drift",
+            "angle": "eye level while kneeling",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "night moving toward dawn",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "prop": "on parcel"
+            },
+            "end_state": {
+              "prop": "in Mira's hands"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S06: Mira kneels, takes the red paper crane, and meets Courier-7's flickering light. narrow apartment hallway at night, rain-lit window at the far end. intimate close-ups, eye level while kneeling, recognition into relief. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Mira kneels, takes the red paper crane, and meets Courier-7's flickering light. Camera: gentle handheld drift, intimate close-ups, eye level while kneeling. Emotion: recognition into relief. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 1.0,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        {
+          "id": "S07",
+          "sequence": 7,
+          "beat_id": "B07",
+          "title": "Delivered",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "End on a visual transfer of hope",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once.",
+          "dialogue": "Delivery complete.",
+          "narration": null,
+          "emotion": "bittersweet peace",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "two-shot silhouette",
+            "movement": "slow crane backward",
+            "angle": "waist height",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "night moving toward dawn",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane"
+            ],
+            "start_state": {
+              "power": "critical"
+            },
+            "end_state": {
+              "prop": "on robot",
+              "power": "one steady pulse"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S07: At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once. narrow apartment hallway at night, rain-lit window at the far end. two-shot silhouette, waist height, bittersweet peace. Show red paper crane clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once. Camera: slow crane backward, two-shot silhouette, waist height. Emotion: bittersweet peace. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.87,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        }
+      ]
+    },
+    "ledger": {
+      "text_input_tokens": 1850,
+      "text_output_tokens": 3120,
+      "vision_input_tokens": 4320,
+      "video_seconds_generated": 24.0,
+      "video_seconds_accepted": 21.0,
+      "rejected_generation_seconds": 3.0,
+      "image_count": 9,
+      "full_regenerations": 0,
+      "local_repairs": 1,
+      "estimated_cost_usd": 3.4221,
+      "budget_usd": 18.0,
+      "repair_reserve_usd": 3.24,
+      "budget_remaining_usd": 14.5779,
+      "acceptance_ratio": 0.875
+    },
+    "error": null,
+    "created_at": "2026-06-23T19:55:14.420764",
+    "updated_at": "2026-06-23T19:55:23.790151",
+    "shots": [
+      {
+        "id": "c6f5ed68-9934-485b-a4f3-7f9c862dad19",
+        "shot_code": "S01",
+        "sequence": 1,
+        "status": "accepted",
+        "contract": {
+          "id": "S01",
+          "sequence": 1,
+          "beat_id": "B01",
+          "title": "Last route",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Signal that tonight is the robot's last chance",
+          "characters": [
+            "C02"
+          ],
+          "action": "Courier-7 rolls into the empty hallway as its amber light falters.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "weary determination",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "wide establishing shot",
+            "movement": "slow low dolly",
+            "angle": "knee height",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [],
+            "start_state": {},
+            "end_state": {
+              "robot": "outside 4B"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S01: Courier-7 rolls into the empty hallway as its amber light falters. narrow apartment hallway at night, rain-lit window at the far end. wide establishing shot, knee height, weary determination. Show the environment clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Courier-7 rolls into the empty hallway as its amber light falters. Camera: slow low dolly, wide establishing shot, knee height. Emotion: weary determination. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.96,
+          "renderer": "wan_i2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      },
+      {
+        "id": "f7c9d904-2f25-427e-8f33-65f0601390b9",
+        "shot_code": "S02",
+        "sequence": 2,
+        "status": "accepted",
+        "contract": {
+          "id": "S02",
+          "sequence": 2,
+          "beat_id": "B02",
+          "title": "The paper promise",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Establish the unanswered delivery and recurring prop",
+          "characters": [
+            "C02"
+          ],
+          "action": "Courier-7 places a parcel topped with a red paper crane at the closed door.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "ritualistic tenderness",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "close-up insert",
+            "movement": "controlled lateral slide",
+            "angle": "floor level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "parcel": "in gripper"
+            },
+            "end_state": {
+              "parcel": "on mat",
+              "prop": "on parcel"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S02: Courier-7 places a parcel topped with a red paper crane at the closed door. narrow apartment hallway at night, rain-lit window at the far end. close-up insert, floor level, ritualistic tenderness. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Courier-7 places a parcel topped with a red paper crane at the closed door. Camera: controlled lateral slide, close-up insert, floor level. Emotion: ritualistic tenderness. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.52,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      },
+      {
+        "id": "a3b33c20-43d4-4247-a64c-2891f1ae3978",
+        "shot_code": "S03",
+        "sequence": 3,
+        "status": "accepted",
+        "contract": {
+          "id": "S03",
+          "sequence": 3,
+          "beat_id": "B03",
+          "title": "Every night",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Show that the robot has returned for years",
+          "characters": [
+            "C02"
+          ],
+          "action": "A compressed montage shows rain, dust, and changing seasons while the same robot returns.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "steadfast loneliness",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "locked medium wide",
+            "movement": "time-lapse push-in",
+            "angle": "eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "door": "closed"
+            },
+            "end_state": {
+              "robot": "more weathered"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S03: A compressed montage shows rain, dust, and changing seasons while the same robot returns. narrow apartment hallway at night, rain-lit window at the far end. locked medium wide, eye level, steadfast loneliness. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. A compressed montage shows rain, dust, and changing seasons while the same robot returns. Camera: time-lapse push-in, locked medium wide, eye level. Emotion: steadfast loneliness. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.66,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      },
+      {
+        "id": "a9623e08-57ca-487d-affa-3dffbe3c5b92",
+        "shot_code": "S04",
+        "sequence": 4,
+        "status": "accepted",
+        "contract": {
+          "id": "S04",
+          "sequence": 4,
+          "beat_id": "B04",
+          "title": "Power at one percent",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Introduce an irreversible deadline",
+          "characters": [
+            "C02"
+          ],
+          "action": "The amber light flickers; Courier-7 nudges the parcel to the threshold.",
+          "dialogue": "Route expires at dawn.",
+          "narration": null,
+          "emotion": "quiet urgency",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "macro to medium",
+            "movement": "rack focus to door",
+            "angle": "robot eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "power": "one percent"
+            },
+            "end_state": {
+              "power": "critical"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S04: The amber light flickers; Courier-7 nudges the parcel to the threshold. narrow apartment hallway at night, rain-lit window at the far end. macro to medium, robot eye level, quiet urgency. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. The amber light flickers; Courier-7 nudges the parcel to the threshold. Camera: rack focus to door, macro to medium, robot eye level. Emotion: quiet urgency. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.71,
+          "renderer": "wan_i2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      },
+      {
+        "id": "60faa127-1198-4950-93e5-c49d5bf28592",
+        "shot_code": "S05",
+        "sequence": 5,
+        "status": "accepted",
+        "contract": {
+          "id": "S05",
+          "sequence": 5,
+          "beat_id": "B05",
+          "title": "The impossible sound",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Reverse the pattern and reveal Mira",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "The lock turns. The door opens and warm light cuts across Courier-7.",
+          "dialogue": null,
+          "narration": null,
+          "emotion": "stunned recognition",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "medium reveal",
+            "movement": "slow push through light",
+            "angle": "eye level",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "rainy night",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "door": "closed",
+              "Mira": "unseen"
+            },
+            "end_state": {
+              "door": "open",
+              "Mira": "visible",
+              "prop": "between them"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S05: The lock turns. The door opens and warm light cuts across Courier-7. narrow apartment hallway at night, rain-lit window at the far end. medium reveal, eye level, stunned recognition. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. The lock turns. The door opens and warm light cuts across Courier-7. Camera: slow push through light, medium reveal, eye level. Emotion: stunned recognition. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.98,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 2
+        },
+        "attempts": 2,
+        "accepted": true
+      },
+      {
+        "id": "15f03df0-bb0e-47be-b182-2d12480f5052",
+        "shot_code": "S06",
+        "sequence": 6,
+        "status": "accepted",
+        "contract": {
+          "id": "S06",
+          "sequence": 6,
+          "beat_id": "B06",
+          "title": "You came back",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "Deliver the meaning of the repeated route",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "Mira kneels, takes the red paper crane, and meets Courier-7's flickering light.",
+          "dialogue": "You came back.\nI never stopped.",
+          "narration": null,
+          "emotion": "recognition into relief",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "intimate close-ups",
+            "movement": "gentle handheld drift",
+            "angle": "eye level while kneeling",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "night moving toward dawn",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane",
+              "parcel"
+            ],
+            "start_state": {
+              "prop": "on parcel"
+            },
+            "end_state": {
+              "prop": "in Mira's hands"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S06: Mira kneels, takes the red paper crane, and meets Courier-7's flickering light. narrow apartment hallway at night, rain-lit window at the far end. intimate close-ups, eye level while kneeling, recognition into relief. Show red paper crane, parcel clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Mira kneels, takes the red paper crane, and meets Courier-7's flickering light. Camera: gentle handheld drift, intimate close-ups, eye level while kneeling. Emotion: recognition into relief. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 1.0,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "max_retries": 2,
+          "quality_threshold": 0.86
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      },
+      {
+        "id": "9409f0e4-f4e7-43a8-b062-4aed44cd453b",
+        "shot_code": "S07",
+        "sequence": 7,
+        "status": "accepted",
+        "contract": {
+          "id": "S07",
+          "sequence": 7,
+          "beat_id": "B07",
+          "title": "Delivered",
+          "duration_seconds": 3,
+          "aspect_ratio": "9:16",
+          "narrative_objective": "End on a visual transfer of hope",
+          "characters": [
+            "C01",
+            "C02"
+          ],
+          "action": "At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once.",
+          "dialogue": "Delivery complete.",
+          "narration": null,
+          "emotion": "bittersweet peace",
+          "location": "narrow apartment hallway at night, rain-lit window at the far end",
+          "camera": {
+            "framing": "two-shot silhouette",
+            "movement": "slow crane backward",
+            "angle": "waist height",
+            "lens": "50mm cinematic"
+          },
+          "continuity": {
+            "location": "narrow apartment hallway at night, rain-lit window at the far end",
+            "time_of_day": "night moving toward dawn",
+            "wardrobe": {
+              "C02": "scratched courier shell, blue route stripe, no logos",
+              "C01": "dark forest-green coat over neutral sleepwear"
+            },
+            "required_props": [
+              "red paper crane"
+            ],
+            "start_state": {
+              "power": "critical"
+            },
+            "end_state": {
+              "prop": "on robot",
+              "power": "one steady pulse"
+            }
+          },
+          "storyboard_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. Storyboard S07: At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once. narrow apartment hallway at night, rain-lit window at the far end. two-shot silhouette, waist height, bittersweet peace. Show red paper crane clearly.",
+          "video_prompt": "grounded cinematic realism, controlled lighting, shallow depth of field. At dawn, Mira places the red paper crane behind the robot's cracked badge plate as its light steadies once. Camera: slow crane backward, two-shot silhouette, waist height. Emotion: bittersweet peace. Preserve wardrobe and props. No logos or on-screen text.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "salience": 0.87,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "max_retries": 1,
+          "quality_threshold": 0.8
+        },
+        "quality": {
+          "passed": true,
+          "overall_score": 0.93,
+          "dimensions": [
+            {
+              "name": "narrative",
+              "score": 0.94,
+              "evidence": "Beat objective is visible."
+            },
+            {
+              "name": "identity",
+              "score": 0.92,
+              "evidence": "Character design is stable."
+            },
+            {
+              "name": "continuity",
+              "score": 0.95,
+              "evidence": "Required props and state persist."
+            },
+            {
+              "name": "camera",
+              "score": 0.91,
+              "evidence": "Framing follows the plan."
+            },
+            {
+              "name": "motion",
+              "score": 0.89,
+              "evidence": "Motion is coherent."
+            },
+            {
+              "name": "dialogue",
+              "score": 0.94,
+              "evidence": "Audio fits its shot."
+            },
+            {
+              "name": "safety",
+              "score": 1.0,
+              "evidence": "No safety violation."
+            }
+          ],
+          "violations": [],
+          "repair_strategy": "none",
+          "repair_instruction": null,
+          "evaluator_model": "directorgraph-mock-continuity-supervisor",
+          "attempt": 1
+        },
+        "attempts": 1,
+        "accepted": true
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "kind": "project.created",
+        "message": "Creative brief registered",
+        "agent": "Executive Showrunner",
+        "payload": {
+          "title": "The Last Delivery",
+          "premise": "Every night a small courier robot leaves a package at the same apartment. On its final night before decommissioning, the door finally opens.",
+          "genre": "science-fiction drama",
+          "tone": "cinematic, intimate, emotionally resonant",
+          "target_audience": "global short-form drama viewers",
+          "duration_seconds": 21,
+          "aspect_ratio": "9:16",
+          "language": "English",
+          "visual_style": "grounded cinematic realism, controlled lighting, shallow depth of field",
+          "budget_usd": 18.0,
+          "repair_reserve_percent": 18,
+          "seed": 20260710,
+          "required_prop": "red paper crane"
+        },
+        "created_at": "2026-06-23T19:55:14.422037"
+      },
+      {
+        "id": 2,
+        "kind": "project.planning",
+        "message": "Executive Showrunner is compiling the creative brief into StoryIR",
+        "agent": "Executive Showrunner",
+        "payload": {
+          "status": "planning"
+        },
+        "created_at": "2026-06-23T19:55:14.432894"
+      },
+      {
+        "id": 3,
+        "kind": "story.plan.created",
+        "message": "Narrative compiler produced 7 beats and 7 shot contracts",
+        "agent": "Story Architect",
+        "payload": {
+          "beats": 7,
+          "shots": 7
+        },
+        "created_at": "2026-06-23T19:55:14.478741"
+      },
+      {
+        "id": 4,
+        "kind": "model.route.story",
+        "message": "Story architecture completed with directorgraph-deterministic-story-compiler",
+        "agent": "Story Architect",
+        "payload": {
+          "model": "directorgraph-deterministic-story-compiler",
+          "input_tokens": 1850,
+          "output_tokens": 3120
+        },
+        "created_at": "2026-06-23T19:55:14.482777"
+      },
+      {
+        "id": 5,
+        "kind": "project.storyboarding",
+        "message": "Visual Director is generating production references and dialogue",
+        "agent": "Visual Director",
+        "payload": {
+          "status": "storyboarding"
+        },
+        "created_at": "2026-06-23T19:55:14.484403"
+      },
+      {
+        "id": 6,
+        "kind": "characters.references.locked",
+        "message": "Visual Director locked 2 canonical character references",
+        "agent": "Visual Director",
+        "payload": {
+          "characters": [
+            {
+              "id": "C01",
+              "name": "Mira",
+              "model": "directorgraph-character-lock"
+            },
+            {
+              "id": "C02",
+              "name": "Courier-7",
+              "model": "directorgraph-character-lock"
+            }
+          ]
+        },
+        "created_at": "2026-06-23T19:55:14.532692"
+      },
+      {
+        "id": 7,
+        "kind": "shot.storyboarding",
+        "message": "S01 \u00b7 Last route: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S01",
+          "seed": 20260711
+        },
+        "created_at": "2026-06-23T19:55:14.534585"
+      },
+      {
+        "id": 8,
+        "kind": "shot.storyboarding",
+        "message": "S02 \u00b7 The paper promise: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S02",
+          "seed": 20260712
+        },
+        "created_at": "2026-06-23T19:55:14.536173"
+      },
+      {
+        "id": 9,
+        "kind": "shot.storyboarding",
+        "message": "S03 \u00b7 Every night: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S03",
+          "seed": 20260713
+        },
+        "created_at": "2026-06-23T19:55:14.537390"
+      },
+      {
+        "id": 10,
+        "kind": "shot.storyboarding",
+        "message": "S04 \u00b7 Power at one percent: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S04",
+          "seed": 20260714
+        },
+        "created_at": "2026-06-23T19:55:14.538803"
+      },
+      {
+        "id": 11,
+        "kind": "shot.storyboarding",
+        "message": "S05 \u00b7 The impossible sound: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S05",
+          "seed": 20260715
+        },
+        "created_at": "2026-06-23T19:55:14.540035"
+      },
+      {
+        "id": 12,
+        "kind": "shot.storyboarding",
+        "message": "S06 \u00b7 You came back: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S06",
+          "seed": 20260716
+        },
+        "created_at": "2026-06-23T19:55:14.541224"
+      },
+      {
+        "id": 13,
+        "kind": "shot.storyboarding",
+        "message": "S07 \u00b7 Delivered: generating continuity reference",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S07",
+          "seed": 20260717
+        },
+        "created_at": "2026-06-23T19:55:14.542390"
+      },
+      {
+        "id": 14,
+        "kind": "shot.storyboarded",
+        "message": "S02 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S02",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": null
+        },
+        "created_at": "2026-06-23T19:55:14.592446"
+      },
+      {
+        "id": 15,
+        "kind": "shot.storyboarded",
+        "message": "S03 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S03",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": null
+        },
+        "created_at": "2026-06-23T19:55:14.606467"
+      },
+      {
+        "id": 16,
+        "kind": "shot.storyboarded",
+        "message": "S01 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S01",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": null
+        },
+        "created_at": "2026-06-23T19:55:14.608888"
+      },
+      {
+        "id": 17,
+        "kind": "shot.storyboarded",
+        "message": "S04 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S04",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": "espeak-local-preview"
+        },
+        "created_at": "2026-06-23T19:55:14.640295"
+      },
+      {
+        "id": 18,
+        "kind": "shot.storyboarded",
+        "message": "S05 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S05",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": null
+        },
+        "created_at": "2026-06-23T19:55:14.659860"
+      },
+      {
+        "id": 19,
+        "kind": "shot.storyboarded",
+        "message": "S06 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S06",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": "espeak-local-preview"
+        },
+        "created_at": "2026-06-23T19:55:14.662868"
+      },
+      {
+        "id": 20,
+        "kind": "shot.storyboarded",
+        "message": "S07 reference locked; continuity contract is ready",
+        "agent": "Visual Director",
+        "payload": {
+          "shot": "S07",
+          "storyboard_model": "directorgraph-storyboard-renderer",
+          "voice_model": "espeak-local-preview"
+        },
+        "created_at": "2026-06-23T19:55:14.678268"
+      },
+      {
+        "id": 21,
+        "kind": "project.producing",
+        "message": "Production Manager is rendering independent shots in parallel",
+        "agent": "Production Manager",
+        "payload": {
+          "status": "producing"
+        },
+        "created_at": "2026-06-23T19:55:14.682254"
+      },
+      {
+        "id": 22,
+        "kind": "shot.rendering",
+        "message": "S01 rendering with wan_i2v at 1080P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S01",
+          "attempt": 1,
+          "renderer": "wan_i2v",
+          "salience": 0.96
+        },
+        "created_at": "2026-06-23T19:55:14.684263"
+      },
+      {
+        "id": 23,
+        "kind": "shot.rendering",
+        "message": "S02 rendering with wan_i2v at 720P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S02",
+          "attempt": 1,
+          "renderer": "wan_i2v",
+          "salience": 0.52
+        },
+        "created_at": "2026-06-23T19:55:14.686388"
+      },
+      {
+        "id": 24,
+        "kind": "shot.rendering",
+        "message": "S03 rendering with wan_i2v at 720P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S03",
+          "attempt": 1,
+          "renderer": "wan_i2v",
+          "salience": 0.66
+        },
+        "created_at": "2026-06-23T19:55:14.690379"
+      },
+      {
+        "id": 25,
+        "kind": "shot.rendering",
+        "message": "S04 rendering with wan_i2v at 720P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S04",
+          "attempt": 1,
+          "renderer": "wan_i2v",
+          "salience": 0.71
+        },
+        "created_at": "2026-06-23T19:55:14.693932"
+      },
+      {
+        "id": 26,
+        "kind": "shot.rendering",
+        "message": "S05 rendering with wan_r2v at 1080P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S05",
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.98
+        },
+        "created_at": "2026-06-23T19:55:14.701550"
+      },
+      {
+        "id": 27,
+        "kind": "shot.rendering",
+        "message": "S06 rendering with wan_r2v at 1080P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S06",
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 1
+        },
+        "created_at": "2026-06-23T19:55:14.705040"
+      },
+      {
+        "id": 28,
+        "kind": "shot.rendering",
+        "message": "S07 rendering with wan_r2v at 720P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S07",
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.87
+        },
+        "created_at": "2026-06-23T19:55:14.708339"
+      },
+      {
+        "id": 29,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S03 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S03",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:15.511025"
+      },
+      {
+        "id": 30,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S02 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S02",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:15.518140"
+      },
+      {
+        "id": 31,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S01 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S01",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:15.522566"
+      },
+      {
+        "id": 32,
+        "kind": "shot.accepted",
+        "message": "S03 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S03",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:15.561371"
+      },
+      {
+        "id": 33,
+        "kind": "shot.accepted",
+        "message": "S02 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S02",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:15.570373"
+      },
+      {
+        "id": 34,
+        "kind": "shot.accepted",
+        "message": "S01 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S01",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:15.580047"
+      },
+      {
+        "id": 35,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S04 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S04",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:16.390206"
+      },
+      {
+        "id": 36,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S05 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S05",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:16.406272"
+      },
+      {
+        "id": 37,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S06 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S06",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:16.411615"
+      },
+      {
+        "id": 38,
+        "kind": "shot.accepted",
+        "message": "S04 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S04",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:16.435061"
+      },
+      {
+        "id": 39,
+        "kind": "shot.rejected",
+        "message": "S05 failed continuity: Required prop 'red paper crane' is missing between the characters.",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S05",
+          "score": 0.72,
+          "repair_strategy": "local_edit",
+          "repair_instruction": "Restore the red paper crane on the parcel. Preserve identity, framing, lighting, and timing."
+        },
+        "created_at": "2026-06-23T19:55:16.450252"
+      },
+      {
+        "id": 40,
+        "kind": "shot.repairing",
+        "message": "S05 repairing with wan_r2v at 1080P",
+        "agent": "Production Manager",
+        "payload": {
+          "shot": "S05",
+          "attempt": 2,
+          "renderer": "wan_r2v",
+          "salience": 0.98
+        },
+        "created_at": "2026-06-23T19:55:16.460380"
+      },
+      {
+        "id": 41,
+        "kind": "shot.accepted",
+        "message": "S06 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S06",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:16.469389"
+      },
+      {
+        "id": 42,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S07 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S07",
+          "attempt": 1,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:16.899630"
+      },
+      {
+        "id": 43,
+        "kind": "shot.accepted",
+        "message": "S07 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S07",
+          "score": 0.93,
+          "attempt": 1
+        },
+        "created_at": "2026-06-23T19:55:16.957516"
+      },
+      {
+        "id": 44,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S05 against its machine-readable contract",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S05",
+          "attempt": 2,
+          "video_model": "ffmpeg-kinetic-preview"
+        },
+        "created_at": "2026-06-23T19:55:17.022774"
+      },
+      {
+        "id": 45,
+        "kind": "shot.accepted",
+        "message": "S05 passed at 93%",
+        "agent": "Continuity Supervisor",
+        "payload": {
+          "shot": "S05",
+          "score": 0.93,
+          "attempt": 2
+        },
+        "created_at": "2026-06-23T19:55:17.066268"
+      },
+      {
+        "id": 46,
+        "kind": "project.editing",
+        "message": "Picture Editor is building the final timeline and caption track",
+        "agent": "Picture Editor",
+        "payload": {
+          "status": "editing"
+        },
+        "created_at": "2026-06-23T19:55:17.069461"
+      },
+      {
+        "id": 47,
+        "kind": "edit.master.created",
+        "message": "Picture Editor assembled the accepted clips, dialogue, and timed captions",
+        "agent": "Picture Editor",
+        "payload": {
+          "acceptance_ratio": 0.875,
+          "estimated_cost_usd": 3.4221
+        },
+        "created_at": "2026-06-23T19:55:23.789278"
+      },
+      {
+        "id": 48,
+        "kind": "project.completed",
+        "message": "Verified production master passed every contract gate",
+        "agent": "Executive Showrunner",
+        "payload": {
+          "status": "completed"
+        },
+        "created_at": "2026-06-23T19:55:23.791412"
+      }
+    ]
+  },
+  "audit_trail": [
+    {
+      "shot": "S01",
+      "renderer": "wan_i2v",
+      "resolution": "1080P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/storyboard-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/attempts/attempt-1/inspection.json"
+      }
+    },
+    {
+      "shot": "S02",
+      "renderer": "wan_i2v",
+      "resolution": "720P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/storyboard-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/attempts/attempt-1/inspection.json"
+      }
+    },
+    {
+      "shot": "S03",
+      "renderer": "wan_i2v",
+      "resolution": "720P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/storyboard-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/attempts/attempt-1/inspection.json"
+      }
+    },
+    {
+      "shot": "S04",
+      "renderer": "wan_i2v",
+      "resolution": "720P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/storyboard-materialization.json",
+        "dialogue_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/dialogue-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/attempts/attempt-1/inspection.json"
+      }
+    },
+    {
+      "shot": "S05",
+      "renderer": "wan_r2v",
+      "resolution": "1080P",
+      "attempts": 2,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/storyboard-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/attempts/attempt-2/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/attempts/attempt-2/inspection.json"
+      }
+    },
+    {
+      "shot": "S06",
+      "renderer": "wan_r2v",
+      "resolution": "1080P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/storyboard-materialization.json",
+        "dialogue_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/dialogue-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/attempts/attempt-1/inspection.json"
+      }
+    },
+    {
+      "shot": "S07",
+      "renderer": "wan_r2v",
+      "resolution": "720P",
+      "attempts": 1,
+      "quality": 0.93,
+      "checkpoint_keys": {
+        "status": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/status.json",
+        "storyboard_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/storyboard-materialization.json",
+        "dialogue_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/dialogue-materialization.json",
+        "video_materialization": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/attempts/attempt-1/asset-materialization.json",
+        "inspection": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/attempts/attempt-1/inspection.json"
+      }
+    }
+  ],
+  "disclaimer": "Mock-mode example manifest. It demonstrates durable OSS object-key audit_trail; read-time signed URLs are intentionally excluded.",
+  "storage": {
+    "schema": "directorgraph.production-storage-audit-trail.v1",
+    "available": true,
+    "manifest_key": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/manifest.json",
+    "read_model_key": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/read-model.json",
+    "story_ir_key": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/story/story-ir.v1.json",
+    "final_manifest_key": "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/final/manifest.json",
+    "object_keys": [
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/final/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/final/manifest.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/ledger/current.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/read-model.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S01/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S02/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S03/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/dialogue-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S04/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/attempts/attempt-2/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/attempts/attempt-2/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S05/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/dialogue-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S06/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/attempts/attempt-1/asset-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/attempts/attempt-1/inspection.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/contract.v1.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/dialogue-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/status.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/shots/S07/storyboard-materialization.json",
+      "projects/a9cccb35-e887-4c48-b2e9-6058dc566667/story/story-ir.v1.json"
+    ]
+  }
+}

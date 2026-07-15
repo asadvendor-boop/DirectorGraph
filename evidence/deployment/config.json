@@ -1,0 +1,16 @@
+{
+  "judge_access_code_configured": true,
+  "live_ready": true,
+  "models": {
+    "edit": "happyhorse-1.1-t2v",
+    "image": "wan2.6-t2i",
+    "reference_video": "wan2.7-r2v",
+    "speech": "qwen3-tts-flash",
+    "story": "qwen-plus",
+    "video": "wan2.6-i2v",
+    "vision": "qwen3-vl-flash"
+  },
+  "oss_ready": true,
+  "provider_mode": "live",
+  "public_demo_project_id": "0bc17703-d506-4590-86b3-080792f4d239"
+}

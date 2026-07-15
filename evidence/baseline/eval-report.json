@@ -1,0 +1,60 @@
+{
+  "schema": "directorgraph.eval-report.v1",
+  "generated_at": "2026-06-24T08:27:48.929172+00:00",
+  "project_id": "00e87ab1-e246-4e5a-881a-f66955a79153",
+  "project_title": "The Last Delivery",
+  "mode": "measured deterministic mock pipeline",
+  "baselines": {
+    "single_pass_no_qc": {
+      "mean_shot_quality": 0.9,
+      "failed_shots_accepted": 1,
+      "description": "Accepts every first render and performs no contract-based inspection."
+    },
+    "directorgraph_qc_repair": {
+      "mean_shot_quality": 0.93,
+      "failed_shots_accepted": 0,
+      "description": "Inspects each render, applies the minimum-cost repair, then revalidates."
+    }
+  },
+  "delta": {
+    "absolute_quality_points": 0.03,
+    "relative_quality_improvement_percent": 3.33,
+    "bad_shots_prevented": 1
+  },
+  "repair_efficiency": {
+    "final_timeline_seconds": 21,
+    "surgically_rerendered_seconds": 3,
+    "whole_film_rerender_seconds_avoided": 18,
+    "generated_seconds": 24.0,
+    "accepted_seconds": 21.0,
+    "acceptance_ratio": 0.875,
+    "local_repairs": 1,
+    "full_regenerations": 0
+  },
+  "resource_ledger": {
+    "text_input_tokens": 1850,
+    "text_output_tokens": 3120,
+    "vision_input_tokens": 4320,
+    "video_seconds_generated": 24.0,
+    "video_seconds_accepted": 21.0,
+    "rejected_generation_seconds": 3.0,
+    "image_count": 9,
+    "full_regenerations": 0,
+    "local_repairs": 1,
+    "estimated_cost_usd": 3.4221,
+    "budget_usd": 18.0,
+    "repair_reserve_usd": 3.24
+  },
+  "rejected_attempts": [
+    {
+      "shot": "S05",
+      "score": 0.72,
+      "repair_strategy": "local_edit",
+      "repair_instruction": "Restore the red paper crane on the parcel. Preserve identity, framing, lighting, and timing."
+    }
+  ],
+  "notes": [
+    "The included mock benchmark is reproducible and validates orchestration behavior, not Wan output quality.",
+    "Run the same harness against live projects before making public model-quality claims."
+  ]
+}

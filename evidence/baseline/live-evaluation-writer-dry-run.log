@@ -1,0 +1,13 @@
+{
+  "outputs": [
+    "evals/live-results.json",
+    "evals/live-results.md"
+  ],
+  "required_inputs": [
+    "evals/eval-report.json from a live production database or OSS-recovered read model",
+    "evals/eval-report.md from the same live report",
+    "PUBLIC_APP_URL as a public HTTPS URL",
+    "IMAGE_DIGEST as sha256:<64 lowercase hex>"
+  ],
+  "schema": "directorgraph.live-evaluation-plan.v1"
+}

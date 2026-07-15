@@ -1,0 +1,8 @@
+docs/OPERATIONS_RUNBOOK.md:14:## Approval Gates
+docs/OPERATIONS_RUNBOOK.md:96:## Deployment Sequence
+docs/OPERATIONS_RUNBOOK.md:109:## Judge Test Procedure
+docs/OPERATIONS_RUNBOOK.md:119:## Incident Response
+docs/OPERATIONS_RUNBOOK.md:134:## Evidence Checklist
+docs/THREAT_MODEL.md:14:## Assets
+docs/THREAT_MODEL.md:25:## Entry Points
+docs/THREAT_MODEL.md:51:## Required Cloud Controls Before Live Submission

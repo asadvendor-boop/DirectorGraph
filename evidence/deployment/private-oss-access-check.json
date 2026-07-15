@@ -1,0 +1,23 @@
+{
+  "anonymous_access": "denied",
+  "attempts": [
+    {
+      "headers": {
+        "content-type": "application/xml",
+        "server": "AliyunOSS",
+        "x-oss-request-id": "6A4149C9D72D203338D142DB",
+        "x-oss-server-time": "12"
+      },
+      "method": "HEAD",
+      "status_code": 403
+    }
+  ],
+  "expected_statuses": [
+    401,
+    403
+  ],
+  "generated_at": "2026-06-28T16:20:25.581457+00:00",
+  "repository_commit": "unknown",
+  "schema": "directorgraph.private-oss-access-check.v1",
+  "target_url": "https://qwen-hackathon-5043174264651875-sg.oss-ap-southeast-1.aliyuncs.com/directorgraph/proof/private-oss-anonymous-test.json"
+}

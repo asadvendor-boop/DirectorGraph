@@ -1,0 +1,19 @@
+{
+  "base_url_env": "DIRECTORGRAPH_BASE_URL",
+  "judge_code_env": null,
+  "mode": "mock-task",
+  "output": "evidence/deployment/mock-task-smoke.json",
+  "schema": "directorgraph.deployment-task-smoke-plan.v1",
+  "stores_judge_code": false,
+  "writes_signed_urls": false
+}
+
+{
+  "base_url_env": "DIRECTORGRAPH_BASE_URL",
+  "judge_code_env": "DIRECTORGRAPH_JUDGE_CODE",
+  "mode": "live-judge-test",
+  "output": "evidence/deployment/live-judge-test-smoke.json",
+  "schema": "directorgraph.deployment-task-smoke-plan.v1",
+  "stores_judge_code": false,
+  "writes_signed_urls": false
+}

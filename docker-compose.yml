@@ -1,0 +1,79 @@
+name: directorgraph
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: directorgraph
+      POSTGRES_USER: directorgraph
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-directorgraph-local}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U directorgraph -d directorgraph"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: ./services/api
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://directorgraph:${POSTGRES_PASSWORD:-directorgraph-local}@postgres:5432/directorgraph
+      MEDIA_ROOT: /var/lib/directorgraph/media
+      PUBLIC_MEDIA_BASE_URL: ${PUBLIC_MEDIA_BASE_URL:-http://localhost:8000/media}
+      INLINE_WORKER: "false"
+      SEED_DEMO: ${SEED_DEMO:-true}
+      PROVIDER_MODE: ${PROVIDER_MODE:-mock}
+    volumes:
+      - media-data:/var/lib/directorgraph/media
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  worker:
+    build:
+      context: ./services/api
+    restart: unless-stopped
+    command: ["python", "-m", "app.worker"]
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://directorgraph:${POSTGRES_PASSWORD:-directorgraph-local}@postgres:5432/directorgraph
+      MEDIA_ROOT: /var/lib/directorgraph/media
+      PUBLIC_MEDIA_BASE_URL: ${PUBLIC_MEDIA_BASE_URL:-http://localhost:8000/media}
+      INLINE_WORKER: "false"
+      SEED_DEMO: "false"
+      PROVIDER_MODE: ${PROVIDER_MODE:-mock}
+    volumes:
+      - media-data:/var/lib/directorgraph/media
+    depends_on:
+      api:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./apps/web
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  postgres-data:
+  media-data:

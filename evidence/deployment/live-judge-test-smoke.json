@@ -1,0 +1,155 @@
+{
+  "base_url": "https://directorgraph.47.84.232.193.sslip.io",
+  "checks": {
+    "app_mode_web": true,
+    "expected_provider_mode": true,
+    "final_video_available": true,
+    "production_manifest_available": true,
+    "project_completed": true,
+    "readiness_ready_or_mock": true,
+    "storage_manifest_checked": true,
+    "submission_returned_task_id": true,
+    "task_succeeded": true
+  },
+  "completed_at": "2026-06-28T16:47:34.845560+00:00",
+  "config": {
+    "judge_access_code_configured": true,
+    "live_ready": true,
+    "oss_ready": true,
+    "provider_mode": "live"
+  },
+  "health": {
+    "build_sha": "local",
+    "function_compute_task_configured": true,
+    "live_ready": true,
+    "mode": "web",
+    "oss_ready": true,
+    "provider_mode": "live"
+  },
+  "manifest": {
+    "audit_trail_count": 3,
+    "project_status": "completed",
+    "schema": "directorgraph.production-manifest.v1"
+  },
+  "observations": [
+    {
+      "observed_at": "2026-06-28T16:46:28.572745+00:00",
+      "project_status": "queued",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:33.763420+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:38.950429+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:44.165575+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:49.345206+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:54.518520+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:46:59.716169+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:04.918570+00:00",
+      "project_status": "planning",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:10.206273+00:00",
+      "project_status": "storyboarding",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:15.701651+00:00",
+      "project_status": "producing",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:21.320164+00:00",
+      "project_status": "producing",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:27.249235+00:00",
+      "project_status": "editing",
+      "task_status": "running"
+    },
+    {
+      "observed_at": "2026-06-28T16:47:33.013486+00:00",
+      "project_status": "completed",
+      "task_status": "succeeded"
+    }
+  ],
+  "project": {
+    "accepted_shots": 3,
+    "duration_seconds": 15,
+    "final_video_url_host": "qwen-hackathon-5043174264651875-sg.oss-ap-southeast-1.aliyuncs.com",
+    "id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f",
+    "production_profile": "judge_test",
+    "shot_count": 3,
+    "status": "completed"
+  },
+  "provider_mode": "live",
+  "readiness": {
+    "checks": {
+      "app_mode_valid": true,
+      "database_configured": true,
+      "function_compute_task_configured": true,
+      "live_credentials_ready": true,
+      "media_publication_ready": true,
+      "media_root_configured": true,
+      "oss_ready": true,
+      "provider_configured": true,
+      "sql_startup_required": true,
+      "state_backend_valid": true
+    },
+    "status": "ready"
+  },
+  "repository_commit": "unknown",
+  "request": {
+    "judge_code_supplied": true,
+    "route": "/api/judge-test"
+  },
+  "schema": "directorgraph.deployment-task-smoke.v1",
+  "smoke_type": "live_judge_test",
+  "started_at": "2026-06-28T16:46:27.519871+00:00",
+  "status": "pass",
+  "storage_manifest": {
+    "manifest_key": "projects/3dceb19e-2c3e-4892-b8b8-ae0333bedd5f/manifest.json",
+    "object_key_count": 70,
+    "schema": "directorgraph.storage-manifest-read.v1",
+    "signed_object_count": 70
+  },
+  "submission": {
+    "initial_status": "pending",
+    "job_id": "1010387b-dacd-43f5-9e86-f555deff3796",
+    "project_id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f",
+    "task_id": "dg-run-project-03401bfb25942de7355ee2a2"
+  },
+  "task": {
+    "attempts": 1,
+    "durable_status_present": true,
+    "function_compute_request_id_present": false,
+    "id": "1010387b-dacd-43f5-9e86-f555deff3796",
+    "status": "succeeded",
+    "task_id": "dg-run-project-03401bfb25942de7355ee2a2"
+  }
+}

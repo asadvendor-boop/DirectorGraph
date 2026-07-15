@@ -1,0 +1,40 @@
+{
+  "base_url": "https://directorgraph.47.84.232.193.sslip.io",
+  "checks": [
+    {
+      "detail": "HTTP 200",
+      "name": "health",
+      "ok": true
+    },
+    {
+      "detail": "HTTP 200",
+      "name": "readiness",
+      "ok": true
+    },
+    {
+      "detail": "HTTP 200",
+      "name": "config",
+      "ok": true
+    },
+    {
+      "detail": "HTTP 200",
+      "name": "public demo project",
+      "ok": true
+    },
+    {
+      "detail": "HTTP 200",
+      "name": "production manifest",
+      "ok": true
+    },
+    {
+      "detail": "HTTP 200",
+      "name": "storage manifest",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-06-28T23:13:26.462304+00:00",
+  "passed": true,
+  "project": "DirectorGraph",
+  "proof_type": "live-http-smoke",
+  "schema_version": 1
+}

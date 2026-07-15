@@ -1,0 +1,10 @@
+{
+  "captured_task_id": "dg-run-project-062f6187541c8760acee3783",
+  "dispatch_mode": "function-compute",
+  "function_compute_request_id": "req-smoke",
+  "function_compute_status_code": 202,
+  "function_compute_url_configured": "https://fc.example.invalid/task",
+  "payload_task_id": "dg-run-project-062f6187541c8760acee3783",
+  "status": "passed",
+  "task_id": "dg-run-project-062f6187541c8760acee3783"
+}

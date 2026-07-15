@@ -1,0 +1,12 @@
+{
+  "inspection_key": "projects/32d88c6e-d1c2-41c4-b142-01f2e0fccb1c/shots/S01/attempts/attempt-1/inspection.json",
+  "inspection_score": 0.92,
+  "manifest_contains_inspection_key": true,
+  "manifest_contains_provider_key": true,
+  "object_key_count": 2,
+  "project_id": "32d88c6e-d1c2-41c4-b142-01f2e0fccb1c",
+  "provider_key": "projects/32d88c6e-d1c2-41c4-b142-01f2e0fccb1c/shots/S01/attempts/attempt-1/provider-task.json",
+  "provider_task_id": "task-smoke",
+  "shot_id": "S01",
+  "status": "passed"
+}

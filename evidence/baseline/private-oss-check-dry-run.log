@@ -1,0 +1,8 @@
+{
+  "output": "evidence/deployment/private-oss-access-check.json",
+  "policy": "anonymous HEAD/GET must return 401 or 403",
+  "required": [
+    "OSS_ANONYMOUS_TEST_URL or --url for a private OSS object"
+  ],
+  "schema": "directorgraph.private-oss-access-plan.v1"
+}

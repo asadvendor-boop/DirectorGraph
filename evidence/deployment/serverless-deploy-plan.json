@@ -1,0 +1,37 @@
+{
+  "build_sha": "c39b13c",
+  "build_timestamp": "2026-06-24T10:50:45Z",
+  "generated_at": "2026-06-24T10:50:45.664181+00:00",
+  "required_actions": [
+    "Build linux/amd64 one-image container",
+    "Push immutable image to Alibaba Container Registry",
+    "Deploy web and task Function Compute functions with minimum instances set to zero",
+    "Verify /api/health, /api/readiness, public demo, task endpoint, OSS read/write, and Judge Test"
+  ],
+  "schema": "directorgraph.serverless-deploy-plan.v1",
+  "secrets_configured": {
+    "DASHSCOPE_API_KEY": false,
+    "FUNCTION_COMPUTE_AUTH_HEADER": false,
+    "JUDGE_CREATE_ACCESS_CODE": false,
+    "OSS_ACCESS_KEY_ID": false,
+    "OSS_ACCESS_KEY_SECRET": false
+  },
+  "values": {
+    "ACR_IMAGE_URI": null,
+    "ALIBABA_ACCOUNT_ID": null,
+    "ALIBABA_REGION": null,
+    "FC_RUNTIME_ROLE_ARN": null,
+    "FC_TASK_FUNCTION_NAME": null,
+    "FC_TASK_SERVICE_NAME": null,
+    "FC_WEB_FUNCTION_NAME": null,
+    "FC_WEB_SERVICE_NAME": null,
+    "FUNCTION_COMPUTE_TASK_URL": null,
+    "JUDGE_RUN_MAX_DURATION_SECONDS": "15",
+    "JUDGE_RUN_MAX_SHOTS": "3",
+    "MAX_PROJECT_SPEND_USD": "6",
+    "MAX_TOTAL_LIVE_SPEND_USD": "35",
+    "OSS_BUCKET": null,
+    "OSS_ENDPOINT": null,
+    "PUBLIC_MEDIA_BASE_URL": null
+  }
+}

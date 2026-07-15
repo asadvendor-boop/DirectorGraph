@@ -1,0 +1,1457 @@
+{
+  "generated_at": "2026-07-08T06:17:05.439203+00:00",
+  "manifest": {
+    "created_at": "2026-07-08T00:09:05.800734Z",
+    "final_manifest_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+    "object_keys": [
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905804137Z-sql-343.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906044159Z-sql-344.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906127116Z-sql-345.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000907144767Z-sql-346.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001034609204Z-sql-347.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035719856Z-sql-348.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035809684Z-sql-349.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001058322060Z-sql-350.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102456858Z-sql-351.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102770542Z-sql-352.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103059128Z-sql-353.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103425689Z-sql-354.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103785865Z-sql-355.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001104086464Z-sql-356.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001126826687Z-sql-357.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001147492123Z-sql-358.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001158760786Z-sql-359.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001219753479Z-sql-360.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001231094073Z-sql-361.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001251807321Z-sql-362.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252540422Z-sql-363.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252864819Z-sql-364.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001426647101Z-sql-365.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001434932313Z-sql-366.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001435914494Z-sql-367.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001611026039Z-sql-368.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001618283550Z-sql-369.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001619171360Z-sql-370.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001809382975Z-sql-371.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817049597Z-sql-372.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817880868Z-sql-373.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002007976894Z-sql-374.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015025293Z-sql-375.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015805353Z-sql-376.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002149948273Z-sql-377.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002156804764Z-sql-378.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002157593973Z-sql-379.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002403294852Z-sql-380.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002411639374Z-sql-381.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002412562997Z-sql-382.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423817907Z-sql-383.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423897264Z-sql-384.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/final/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/current.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-render.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-dialogue-tts.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-storyboard.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-character-C01-reference.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc-submission.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-story-planning.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/read-model.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/requests/original.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempt-1.mp4",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/asset-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/inspection.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-task.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/contract.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue.wav",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/status.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-materialization.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-provider-result.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard.png",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+      "projects/0bc17703-d506-4590-86b3-080792f4d239/tasks/dg-run-project-f862ce887df9149c36942cfc/status.json"
+    ],
+    "project_id": "0bc17703-d506-4590-86b3-080792f4d239",
+    "schema_version": "directorgraph.project-manifest.v1",
+    "status": "completed",
+    "story_ir_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+    "title": "Autumn Path",
+    "updated_at": "2026-07-08T00:24:23.895913Z"
+  },
+  "manifest_ref": {
+    "content_type": "application/json",
+    "etag": "450f577e9366cef3dcd876d5a0f59b1beba1607677c942ddd0358b507add7410",
+    "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/manifest.json",
+    "size_bytes": 15718,
+    "updated_at": "2026-07-08T00:24:24.861565Z"
+  },
+  "project_id": "0bc17703-d506-4590-86b3-080792f4d239",
+  "schema": "directorgraph.storage-manifest-read.v1",
+  "signed_objects": [
+    {
+      "expires_at": "2026-07-08T06:32:04.314694Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.320289Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.326018Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.332480Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.338149Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905804137Z-sql-343.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.343545Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906044159Z-sql-344.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.348764Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906127116Z-sql-345.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.354240Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000907144767Z-sql-346.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.359572Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001034609204Z-sql-347.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.364810Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035719856Z-sql-348.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.370191Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035809684Z-sql-349.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.375565Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001058322060Z-sql-350.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.380843Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102456858Z-sql-351.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.386011Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102770542Z-sql-352.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.391255Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103059128Z-sql-353.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.396429Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103425689Z-sql-354.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.401665Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103785865Z-sql-355.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.406781Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001104086464Z-sql-356.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.412217Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001126826687Z-sql-357.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.417234Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001147492123Z-sql-358.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.422977Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001158760786Z-sql-359.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.427804Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001219753479Z-sql-360.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.432656Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001231094073Z-sql-361.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.437866Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001251807321Z-sql-362.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.443265Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252540422Z-sql-363.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.448494Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252864819Z-sql-364.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.453650Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001426647101Z-sql-365.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.458512Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001434932313Z-sql-366.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.463178Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001435914494Z-sql-367.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.468021Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001611026039Z-sql-368.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.472963Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001618283550Z-sql-369.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.477930Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001619171360Z-sql-370.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.482906Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001809382975Z-sql-371.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.487815Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817049597Z-sql-372.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.492773Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817880868Z-sql-373.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.497817Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002007976894Z-sql-374.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.503012Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015025293Z-sql-375.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.507869Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015805353Z-sql-376.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.512763Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002149948273Z-sql-377.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.517732Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002156804764Z-sql-378.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.522513Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002157593973Z-sql-379.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.527407Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002403294852Z-sql-380.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.532332Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002411639374Z-sql-381.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.537030Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002412562997Z-sql-382.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.542119Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423817907Z-sql-383.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.547169Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423897264Z-sql-384.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.552050Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.575584Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.580469Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.585347Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/current.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.590174Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.595132Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.600015Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.604776Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.609651Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.614343Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.619324Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.624072Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.628896Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.633748Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.638505Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.643271Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.648396Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.653141Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.657922Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.662701Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.667667Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.672320Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.677161Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.682366Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.687739Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.692662Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-render.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.697798Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-dialogue-tts.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.702717Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-storyboard.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.708044Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-character-C01-reference.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.713071Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc-submission.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.717887Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-story-planning.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.722758Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/read-model.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.727847Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/requests/original.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.737154Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.742307Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.747239Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.752168Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.756952Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.761813Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.766778Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.771600Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.791819Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.796842Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.802009Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.807032Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.816358Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.846685Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.851985Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.856934Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.862211Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.867318Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.872403Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.877513Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.882287Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.891767Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.897011Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.902040Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.925560Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.950748Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.960030Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.964820Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.969778Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.974673Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.979475Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.984361Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.989164Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:04.994203Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.023633Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.028792Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.033891Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.038917Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.063981Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.085511Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.091209Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.096488Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.101706Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.107432Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.112710Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.118042Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.123258Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.142483Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.147426Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.152402Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.157608Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.192507Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.211723Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.217270Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.245726Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.250721Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.255465Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.260301Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.265474Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.270643Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.280798Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.285600Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.290384Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.295594Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.313105Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.337151Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempt-1.mp4",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.343746Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/asset-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.349878Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/inspection.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.354559Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.359152Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-task.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.364043Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/contract.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.368748Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.373751Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.394279Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue.wav",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.399347Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.404279Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-materialization.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.409283Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-provider-result.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.428890Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard.png",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.433956Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    },
+    {
+      "expires_at": "2026-07-08T06:32:05.439088Z",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/tasks/dg-run-project-f862ce887df9149c36942cfc/status.json",
+      "method": "GET",
+      "redaction_reason": "signed OSS URL omitted from committed evidence",
+      "url": "redacted-signed-oss-url",
+      "url_redacted": true
+    }
+  ]
+}

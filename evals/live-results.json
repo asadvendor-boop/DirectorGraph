@@ -1,0 +1,65 @@
+{
+  "deployment": {
+    "image_digest": "sha256:0cbb47cd16d2eabc15f265c74fcc09ab32bf9eebccd74a391a3d552c8b70d717",
+    "web_url": "https://directorgraph.47.84.232.193.sslip.io"
+  },
+  "generated_at": "2026-07-08T07:36:23.281255+00:00",
+  "limitations": [
+    "Derived from the verified Autumn Path public demo artifact; it is not a generalized visual-quality benchmark.",
+    "The live master is frozen for submission; new paid media runs require explicit approval."
+  ],
+  "metrics": {
+    "acceptance_ratio": 1.0,
+    "accepted_seconds": 24.0,
+    "accepted_shots": 6,
+    "fallback_count": 0,
+    "generated_seconds": 24.0,
+    "planned_shots": 6,
+    "quality_scores": [
+      0.92,
+      0.89,
+      0.85,
+      0.87,
+      0.87,
+      0.91
+    ],
+    "qwen_vl_score_max": 0.92,
+    "qwen_vl_score_min": 0.85,
+    "renderer_path": "wan_r2v",
+    "repair_efficiency": {
+      "full_regenerations": 0,
+      "local_repairs": 0,
+      "rejected_generation_seconds": 0.0
+    },
+    "resource_ledger": {
+      "budget_remaining_usd": 11.5653,
+      "budget_usd": 15.0,
+      "estimated_cost_usd": 3.4347,
+      "repair_reserve_usd": 3.0,
+      "text_input_tokens": 692,
+      "text_output_tokens": 3904,
+      "total_text_vision_tokens": 16357,
+      "vision_input_tokens": 11761
+    },
+    "tts_audio_assets": 6
+  },
+  "repository_commit": "eeac6a6201c83438f694e04efeba84b24c6a6d14",
+  "runs": [
+    {
+      "final_video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+      "kind": "flagship_live_public_demo",
+      "mode": "live_qwen_cloud_public_demo",
+      "planning_path": "live_qwen_character_bound",
+      "project_id": "0bc17703-d506-4590-86b3-080792f4d239",
+      "project_title": "Autumn Path",
+      "source_report_schema": "directorgraph.public-demo.v1",
+      "task_id": null
+    }
+  ],
+  "schema": "directorgraph.live-evaluation.v1",
+  "source_artifacts": {
+    "image_digest": "evidence/deployment/image-digest.json",
+    "public_demo": "evidence/deployment/public-demo.json",
+    "public_demo_check": "evidence/deployment/public-demo-check.json"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "adapter": "AlibabaOssRepository",
+  "bucket": "fake-no-credentials",
+  "etag_round_trip": true,
+  "if_none_match_conflict": true,
+  "key": "projects/adapter-smoke/manifest.json",
+  "loaded_project_id": "adapter-smoke",
+  "signed_url_scheme": "https",
+  "status": "passed"
+}

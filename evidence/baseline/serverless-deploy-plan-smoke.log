@@ -1,0 +1,22 @@
+Serverless deployment plan for DirectorGraph
+Build SHA: c39b13c
+ACR image: <missing>
+Missing values for deploy:
+ALIBABA_REGION
+ALIBABA_ACCOUNT_ID
+ACR_IMAGE_URI
+FC_RUNTIME_ROLE_ARN
+FC_WEB_SERVICE_NAME
+FC_WEB_FUNCTION_NAME
+FC_TASK_SERVICE_NAME
+FC_TASK_FUNCTION_NAME
+PUBLIC_MEDIA_BASE_URL
+DASHSCOPE_API_KEY
+OSS_ENDPOINT
+OSS_BUCKET
+OSS_ACCESS_KEY_ID
+OSS_ACCESS_KEY_SECRET
+FUNCTION_COMPUTE_TASK_URL
+FUNCTION_COMPUTE_AUTH_HEADER
+JUDGE_CREATE_ACCESS_CODE
+Wrote redacted plan: /Users/asad.ali/Desktop/FreshAgents/Track2 Qwen/directorgraph 2/evidence/deployment/serverless-deploy-plan.json

@@ -1,0 +1,25 @@
+{
+  "duration_seconds": 15,
+  "estimated_first_pass_video_usd": 1.3,
+  "estimated_inspection_usd": 0.12,
+  "estimated_one_repair_usd": 0.35,
+  "estimated_story_usd": 0.08,
+  "estimated_storyboards_usd": 0.25,
+  "estimated_total_usd": 2.1084,
+  "estimated_tts_usd": 0.0084,
+  "generated_at": "2026-06-24T10:50:45.676440+00:00",
+  "notes": [
+    "Rates are transparent local estimates used for cap checks, not provider billing claims.",
+    "Run live billing/export reconciliation after paid generation before public cost claims.",
+    "Judge Test estimates should remain below the capped live smoke-test budget."
+  ],
+  "profile": "judge_test",
+  "project_cap_usd": 3.0,
+  "repair_reserve_percent": 20,
+  "repair_reserve_usd": 0.6,
+  "schema": "directorgraph.cost-estimate.v1",
+  "shots": 3,
+  "total_cap_usd": 35.0,
+  "within_project_cap": true,
+  "within_total_cap": true
+}

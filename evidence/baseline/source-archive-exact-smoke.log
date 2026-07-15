@@ -1,0 +1,4 @@
+{"archive": "/var/folders/6y/vnl23p295756v4vb2dy9jjtm0000gn/T//directorgraph-source.XXXXXX.tar.gz", "commit": "7852b48fbe7660e79a2b389b5f2dcdbb5c9e2671", "entries": 311, "prefix": "directorgraph/", "worktree_dirty": true}
+source_archive=/tmp/directorgraph-source-archive-exact.tar.gz
+c60b661cc6b276823dae06fb81a4d63258f81b00794010e4aa9bc9169fa778c1  /tmp/directorgraph-source-archive-exact.tar.gz
+{"archive": "/tmp/directorgraph-source-archive-exact.tar.gz", "checksum": "/tmp/directorgraph-source-archive-exact.tar.gz.sha256", "entries": 311, "matched_tracked_files": 311, "prefix": "directorgraph/", "schema": "directorgraph.source-archive-verification.v1", "sha256": "c60b661cc6b276823dae06fb81a4d63258f81b00794010e4aa9bc9169fa778c1"}

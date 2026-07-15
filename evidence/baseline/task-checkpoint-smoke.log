@@ -1,0 +1,18 @@
+{
+  "duplicate_reused_task": true,
+  "event_object_count": 1,
+  "job_checkpoint_manifest_key": "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/manifest.json",
+  "ledger_object_count": 1,
+  "manifest_key": "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/manifest.json",
+  "manifest_status": "queued",
+  "object_keys": [
+    "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/events/20260624T085635756297Z-dg-run-project-b527e4e264b0bda38f2577b9.json",
+    "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/ledger/entries/20260624T085635756297Z-dg-run-project-b527e4e264b0bda38f2577b9-submission.json",
+    "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/requests/original.json"
+  ],
+  "original_request_key": "projects/d4c529ca-45d9-4884-9dc0-8ad1981ed6a8/requests/original.json",
+  "original_request_recorded": true,
+  "project_id": "d4c529ca-45d9-4884-9dc0-8ad1981ed6a8",
+  "status": "passed",
+  "task_id": "dg-run-project-b527e4e264b0bda38f2577b9"
+}

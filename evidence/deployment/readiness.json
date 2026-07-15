@@ -1,0 +1,34 @@
+{
+  "build": {
+    "sha": "eeac6a6-dirty",
+    "timestamp": "2026-07-07T19:06:06Z"
+  },
+  "checks": {
+    "app_mode_valid": true,
+    "database_configured": true,
+    "function_compute_task_configured": true,
+    "live_credentials_ready": true,
+    "media_publication_ready": true,
+    "media_root_configured": true,
+    "oss_ready": true,
+    "provider_configured": true,
+    "sql_startup_required": true,
+    "state_backend_valid": true
+  },
+  "limits": {
+    "judge_access_code_configured": true,
+    "judge_run_max_duration_seconds": 15,
+    "judge_run_max_shots": 3,
+    "max_project_spend_usd": 15.0,
+    "max_render_attempts_per_shot": 2,
+    "max_total_live_spend_usd": 40.0,
+    "public_demo_project_configured": true,
+    "repair_reserve_percent": 20
+  },
+  "mode": "web",
+  "provider_mode": "live",
+  "service": "DirectorGraph",
+  "state_backend": "local",
+  "status": "ready",
+  "version": "0.1.0"
+}

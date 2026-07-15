@@ -1,0 +1,2956 @@
+{
+  "base_url": "https://directorgraph.47.84.232.193.sslip.io",
+  "checks": {
+    "build_sha_matches": true,
+    "config_provider_live": true,
+    "health_provider_live": true,
+    "public_demo_checked": true,
+    "readiness_ready": true,
+    "task_status_checked": true
+  },
+  "config": {
+    "judge_access_code_configured": true,
+    "live_ready": true,
+    "models": {
+      "edit": "happyhorse-1.1-t2v",
+      "image": "wan2.6-t2i",
+      "reference_video": "wan2.7-r2v",
+      "speech": "qwen3-tts-flash",
+      "story": "qwen-plus",
+      "video": "wan2.6-i2v",
+      "vision": "qwen3-vl-flash"
+    },
+    "oss_ready": true,
+    "provider_mode": "live",
+    "public_demo_project_id": "0bc17703-d506-4590-86b3-080792f4d239"
+  },
+  "evidence_files": [
+    "config.json",
+    "health.json",
+    "image-digest.json",
+    "live-judge-test-smoke.json",
+    "private-oss-access-check.json",
+    "public-demo-check.json",
+    "public-demo-manifest.json",
+    "public-demo-storage-manifest.json",
+    "public-demo.json",
+    "readiness.json",
+    "serverless-deploy-plan.json",
+    "serverless-live-verification.json",
+    "serverless-verification-summary.json",
+    "task-dg-run-project-03401bfb25942de7355ee2a2.json"
+  ],
+  "expect_live": true,
+  "expect_public_demo": true,
+  "expected_build_sha": null,
+  "health": {
+    "build": {
+      "sha": "eeac6a6-dirty",
+      "timestamp": "2026-07-07T19:06:06Z"
+    },
+    "deployment": {
+      "dashscope_region": "singapore",
+      "function_compute_task_configured": true,
+      "live_ready": true,
+      "oss_ready": true
+    },
+    "environment": "production",
+    "limits": {
+      "judge_run_max_duration_seconds": 15,
+      "judge_run_max_shots": 3,
+      "max_project_spend_usd": 15.0,
+      "max_total_live_spend_usd": 40.0
+    },
+    "mode": "web",
+    "provider_mode": "live",
+    "service": "DirectorGraph",
+    "state_backend": "local",
+    "status": "ok",
+    "time": "2026-07-08T06:17:00.861810+00:00",
+    "version": "0.1.0"
+  },
+  "public_demo": {
+    "brief": {
+      "aspect_ratio": "16:9",
+      "budget_usd": 15.0,
+      "duration_seconds": 24,
+      "genre": "quiet character drama",
+      "language": "English",
+      "max_shots": 6,
+      "premise": "A woman in a rust-orange wool coat walks through a quiet autumn park at golden hour. She strolls a tree-lined path, pauses to watch leaves drift down, sits on a weathered wooden bench, and gazes toward the horizon. One recurring character throughout, calm continuous motion, soft natural daylight, no signage, no text, no numerals, no bright light sources, no small handheld props. Every shot includes one short English narration line, five words or fewer.",
+      "production_profile": "standard",
+      "repair_reserve_percent": 20,
+      "required_prop": null,
+      "seed": 20260713,
+      "target_audience": "hackathon judges evaluating a real Qwen Cloud production pipeline",
+      "title": "Autumn Path",
+      "tone": "calm, warm, reflective",
+      "visual_style": "grounded cinematic realism, soft even golden-hour light, shallow depth of field, gentle camera moves, no text or logos"
+    },
+    "created_at": "2026-07-08T00:09:05.800734Z",
+    "error": null,
+    "events": [
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:09:05.800734Z",
+        "id": 1,
+        "kind": "task.run_project.submitted",
+        "message": "Durable task checkpoint registered",
+        "payload": {
+          "duplicate": false,
+          "job_id": "277c9dd3-d5de-4a88-b5dd-efc1c4336d67",
+          "operation": "run_project",
+          "payload": {},
+          "task_id": "dg-run-project-f862ce887df9149c36942cfc"
+        }
+      },
+      {
+        "agent": "Executive Showrunner",
+        "created_at": "2026-07-08T00:09:05.804137Z",
+        "id": 2,
+        "kind": "project.created",
+        "message": "Creative brief registered",
+        "payload": {
+          "aspect_ratio": "16:9",
+          "budget_usd": 15.0,
+          "duration_seconds": 24,
+          "genre": "quiet character drama",
+          "language": "English",
+          "max_shots": 6,
+          "premise": "A woman in a rust-orange wool coat walks through a quiet autumn park at golden hour. She strolls a tree-lined path, pauses to watch leaves drift down, sits on a weathered wooden bench, and gazes toward the horizon. One recurring character throughout, calm continuous motion, soft natural daylight, no signage, no text, no numerals, no bright light sources, no small handheld props. Every shot includes one short English narration line, five words or fewer.",
+          "production_profile": "standard",
+          "repair_reserve_percent": 20,
+          "required_prop": null,
+          "seed": 20260713,
+          "target_audience": "hackathon judges evaluating a real Qwen Cloud production pipeline",
+          "title": "Autumn Path",
+          "tone": "calm, warm, reflective",
+          "visual_style": "grounded cinematic realism, soft even golden-hour light, shallow depth of field, gentle camera moves, no text or logos"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:09:06.044159Z",
+        "id": 3,
+        "kind": "job.queued",
+        "message": "Queued run_project",
+        "payload": {
+          "job_type": "run_project"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:09:06.127116Z",
+        "id": 4,
+        "kind": "project.queued",
+        "message": "Task dg-run-project-f862ce887df9149c36942cfc registered for asynchronous production",
+        "payload": {
+          "status": "queued"
+        }
+      },
+      {
+        "agent": "Executive Showrunner",
+        "created_at": "2026-07-08T00:09:07.144767Z",
+        "id": 5,
+        "kind": "project.planning",
+        "message": "Executive Showrunner is compiling the creative brief into StoryIR",
+        "payload": {
+          "status": "planning"
+        }
+      },
+      {
+        "agent": "Story Architect",
+        "created_at": "2026-07-08T00:10:34.609204Z",
+        "id": 6,
+        "kind": "story.plan.created",
+        "message": "Narrative compiler produced 6 beats and 6 shot contracts",
+        "payload": {
+          "beats": 6,
+          "shots": 6
+        }
+      },
+      {
+        "agent": "Story Architect",
+        "created_at": "2026-07-08T00:10:35.719856Z",
+        "id": 7,
+        "kind": "model.route.story",
+        "message": "Story architecture completed with qwen-plus",
+        "payload": {
+          "character_bound_shots": 6,
+          "degradation_reason": null,
+          "degraded": false,
+          "input_tokens": 692,
+          "model": "qwen-plus",
+          "output_tokens": 3904,
+          "plan_repair_attempted": false,
+          "plan_repair_reason": null,
+          "planning_path": "live_qwen_character_bound",
+          "total_shots": 6
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:10:35.809684Z",
+        "id": 8,
+        "kind": "project.storyboarding",
+        "message": "Visual Director is generating production references and dialogue",
+        "payload": {
+          "status": "storyboarding"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:10:58.322060Z",
+        "id": 9,
+        "kind": "characters.references.locked",
+        "message": "Visual Director locked 1 canonical character references",
+        "payload": {
+          "characters": [
+            {
+              "id": "C01",
+              "model": "wan2.6-t2i",
+              "name": "Elena"
+            }
+          ]
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:02.456858Z",
+        "id": 10,
+        "kind": "shot.storyboarding",
+        "message": "S01 \u00b7 Path entrance: generating continuity reference",
+        "payload": {
+          "seed": 20260714,
+          "shot": "S01"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:02.770542Z",
+        "id": 11,
+        "kind": "shot.storyboarding",
+        "message": "S02 \u00b7 Canopy walk: generating continuity reference",
+        "payload": {
+          "seed": 20260715,
+          "shot": "S02"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:03.059128Z",
+        "id": 12,
+        "kind": "shot.storyboarding",
+        "message": "S03 \u00b7 Mid-path pause: generating continuity reference",
+        "payload": {
+          "seed": 20260716,
+          "shot": "S03"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:03.425689Z",
+        "id": 13,
+        "kind": "shot.storyboarding",
+        "message": "S04 \u00b7 Bench approach: generating continuity reference",
+        "payload": {
+          "seed": 20260717,
+          "shot": "S04"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:03.785865Z",
+        "id": 14,
+        "kind": "shot.storyboarding",
+        "message": "S05 \u00b7 Settle on bench: generating continuity reference",
+        "payload": {
+          "seed": 20260718,
+          "shot": "S05"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:04.086464Z",
+        "id": 15,
+        "kind": "shot.storyboarding",
+        "message": "S06 \u00b7 Horizon gaze: generating continuity reference",
+        "payload": {
+          "seed": 20260719,
+          "shot": "S06"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:26.826687Z",
+        "id": 16,
+        "kind": "shot.storyboarded",
+        "message": "S01 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S01",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:47.492123Z",
+        "id": 17,
+        "kind": "shot.storyboarded",
+        "message": "S02 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S02",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:11:58.760786Z",
+        "id": 18,
+        "kind": "shot.storyboarded",
+        "message": "S03 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S03",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:12:19.753479Z",
+        "id": 19,
+        "kind": "shot.storyboarded",
+        "message": "S04 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S04",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:12:31.094073Z",
+        "id": 20,
+        "kind": "shot.storyboarded",
+        "message": "S05 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S05",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Visual Director",
+        "created_at": "2026-07-08T00:12:51.807321Z",
+        "id": 21,
+        "kind": "shot.storyboarded",
+        "message": "S06 reference locked; continuity contract is ready",
+        "payload": {
+          "shot": "S06",
+          "storyboard_model": "wan2.6-t2i",
+          "voice_model": "qwen3-tts-flash"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:12:52.540422Z",
+        "id": 22,
+        "kind": "project.producing",
+        "message": "Production Manager is rendering independent shots in parallel",
+        "payload": {
+          "status": "producing"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:12:52.864819Z",
+        "id": 23,
+        "kind": "shot.rendering",
+        "message": "S01 rendering with wan_r2v at 720P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.57,
+          "shot": "S01"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:14:26.647101Z",
+        "id": 24,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S01 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S01",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:14:34.932313Z",
+        "id": 25,
+        "kind": "shot.accepted",
+        "message": "S01 passed at 92%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.92,
+          "shot": "S01"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:14:35.914494Z",
+        "id": 26,
+        "kind": "shot.rendering",
+        "message": "S02 rendering with wan_r2v at 720P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.57,
+          "shot": "S02"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:16:11.026039Z",
+        "id": 27,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S02 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S02",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:16:18.283550Z",
+        "id": 28,
+        "kind": "shot.accepted",
+        "message": "S02 passed at 89%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.89,
+          "shot": "S02"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:16:19.171360Z",
+        "id": 29,
+        "kind": "shot.rendering",
+        "message": "S03 rendering with wan_r2v at 1080P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 1,
+          "shot": "S03"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:18:09.382975Z",
+        "id": 30,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S03 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S03",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:18:17.049597Z",
+        "id": 31,
+        "kind": "shot.accepted",
+        "message": "S03 passed at 85%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.85,
+          "shot": "S03"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:18:17.880868Z",
+        "id": 32,
+        "kind": "shot.rendering",
+        "message": "S04 rendering with wan_r2v at 720P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.83,
+          "shot": "S04"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:20:07.976894Z",
+        "id": 33,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S04 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S04",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:20:15.025293Z",
+        "id": 34,
+        "kind": "shot.accepted",
+        "message": "S04 passed at 87%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.87,
+          "shot": "S04"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:20:15.805353Z",
+        "id": 35,
+        "kind": "shot.rendering",
+        "message": "S05 rendering with wan_r2v at 720P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 0.83,
+          "shot": "S05"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:21:49.948273Z",
+        "id": 36,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S05 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S05",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:21:56.804764Z",
+        "id": 37,
+        "kind": "shot.accepted",
+        "message": "S05 passed at 87%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.87,
+          "shot": "S05"
+        }
+      },
+      {
+        "agent": "Production Manager",
+        "created_at": "2026-07-08T00:21:57.593973Z",
+        "id": 38,
+        "kind": "shot.rendering",
+        "message": "S06 rendering with wan_r2v at 1080P",
+        "payload": {
+          "attempt": 1,
+          "renderer": "wan_r2v",
+          "salience": 1,
+          "shot": "S06"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:24:03.294852Z",
+        "id": 39,
+        "kind": "shot.inspecting",
+        "message": "Continuity Supervisor is checking S06 against its machine-readable contract",
+        "payload": {
+          "attempt": 1,
+          "shot": "S06",
+          "video_model": "wan2.7-r2v"
+        }
+      },
+      {
+        "agent": "Continuity Supervisor",
+        "created_at": "2026-07-08T00:24:11.639374Z",
+        "id": 40,
+        "kind": "shot.accepted",
+        "message": "S06 passed at 91%",
+        "payload": {
+          "attempt": 1,
+          "score": 0.91,
+          "shot": "S06"
+        }
+      },
+      {
+        "agent": "Picture Editor",
+        "created_at": "2026-07-08T00:24:12.562997Z",
+        "id": 41,
+        "kind": "project.editing",
+        "message": "Picture Editor is building the final timeline and caption track",
+        "payload": {
+          "status": "editing"
+        }
+      },
+      {
+        "agent": "Picture Editor",
+        "created_at": "2026-07-08T00:24:23.817907Z",
+        "id": 42,
+        "kind": "edit.master.created",
+        "message": "Picture Editor assembled the accepted clips, dialogue, and timed captions",
+        "payload": {
+          "acceptance_ratio": 1.0,
+          "estimated_cost_usd": 3.4347,
+          "final_object_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+          "media_refs": {
+            "final": {
+              "object_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4"
+            }
+          }
+        }
+      },
+      {
+        "agent": "Executive Showrunner",
+        "created_at": "2026-07-08T00:24:23.897264Z",
+        "id": 43,
+        "kind": "project.completed",
+        "message": "Verified production master passed every contract gate",
+        "payload": {
+          "status": "completed"
+        }
+      }
+    ],
+    "final_video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+    "id": "0bc17703-d506-4590-86b3-080792f4d239",
+    "ledger": {
+      "acceptance_ratio": 1.0,
+      "budget_remaining_usd": 11.5653,
+      "budget_usd": 15.0,
+      "estimated_cost_usd": 3.4347,
+      "full_regenerations": 0,
+      "image_count": 7,
+      "local_repairs": 0,
+      "rejected_generation_seconds": 0.0,
+      "repair_reserve_usd": 3.0,
+      "text_input_tokens": 692,
+      "text_output_tokens": 3904,
+      "video_seconds_accepted": 24.0,
+      "video_seconds_generated": 24.0,
+      "vision_input_tokens": 11761
+    },
+    "plan": {
+      "audio_rules": [
+        "One English narration line per shot, five words or fewer",
+        "Narration only \u2014 no dialogue, no music, no SFX",
+        "TTS-synthesizable: clear diction, neutral pace, warm tone"
+      ],
+      "beats": [
+        {
+          "beat_type": "setup",
+          "duration_seconds": 4,
+          "emotional_shift": "Stillness \u2192 gentle motion",
+          "id": "B01",
+          "name": "Step onto path",
+          "objective": "Establish setting, character, and rhythm"
+        },
+        {
+          "beat_type": "setup",
+          "duration_seconds": 4,
+          "emotional_shift": "Motion \u2192 awareness",
+          "id": "B02",
+          "name": "Walk beneath canopy",
+          "objective": "Reinforce continuity and seasonal texture"
+        },
+        {
+          "beat_type": "climax",
+          "duration_seconds": 4,
+          "emotional_shift": "Awareness \u2192 contemplation",
+          "id": "B03",
+          "name": "Pause mid-path",
+          "objective": "Introduce reflective stillness"
+        },
+        {
+          "beat_type": "resolution",
+          "duration_seconds": 4,
+          "emotional_shift": "Contemplation \u2192 release",
+          "id": "B04",
+          "name": "Approach bench",
+          "objective": "Transition to rest and gaze"
+        },
+        {
+          "beat_type": "resolution",
+          "duration_seconds": 4,
+          "emotional_shift": "Release \u2192 grounded presence",
+          "id": "B05",
+          "name": "Sit and settle",
+          "objective": "Anchor emotional weight in posture and light"
+        },
+        {
+          "beat_type": "climax",
+          "duration_seconds": 4,
+          "emotional_shift": "Presence \u2192 quiet awe",
+          "id": "B06",
+          "name": "Gaze toward horizon",
+          "objective": "Visual reveal of light + distance; emotional legibility"
+        }
+      ],
+      "characters": [
+        {
+          "appearance": "Woman, 30s, medium-brown wavy hair tied loosely back, fair skin with faint freckles, calm expression. Wears rust-orange wool coat (medium weight, slightly oversized), cream turtleneck, charcoal straight-leg trousers, low brown leather boots.",
+          "id": "C01",
+          "motivation": "To be present in the quiet passage of time",
+          "name": "Elena",
+          "reference_prompt": "Caucasian woman 30s, rust-orange wool coat, golden-hour park light, shallow DoF, cinematic realism",
+          "reference_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01.png",
+          "role": "Principal character",
+          "voice_direction": "Warm, unhurried, mid-tempo, breathy but clear",
+          "wardrobe": "rust-orange wool coat, cream turtleneck, charcoal trousers, brown leather boots"
+        }
+      ],
+      "logline": "A woman walks a quiet autumn park at golden hour, pausing to reflect as leaves fall.",
+      "schema_version": "1.0",
+      "shots": [
+        {
+          "action": "C01 walks into frame from screen left, stepping onto paved path lined with tall maple and oak trees. Leaves drift gently in background. She walks with relaxed shoulders, hands in coat pockets.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B01",
+          "camera": {
+            "angle": "Eye level",
+            "framing": "Medium full shot",
+            "lens": "50mm, shallow depth of field \u2014 foreground leaves softly blurred",
+            "movement": "Slow lateral glide right, matching her pace"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "continuing forward",
+              "position": "center-frame, mid-path"
+            },
+            "location": "Same park path, consistent tree species and paving",
+            "required_props": [],
+            "start_state": {
+              "motion": "entering frame walking forward at steady pace",
+              "position": "off-screen left"
+            },
+            "time_of_day": "Golden hour \u2014 low sun, warm diffuse light, no harsh highlights",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Sunlight holds its breath.",
+          "duration_seconds": 4,
+          "emotion": "Calm anticipation",
+          "id": "S01",
+          "location": "Tree-lined park path \u2014 paved, gravel-shouldered, dappled with long shadows and amber light.",
+          "max_retries": 1,
+          "narration": "Sunlight holds its breath.",
+          "narrative_objective": "Establish golden-hour park path, introduce C01 walking into frame from left, coat catching warm light.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.57,
+          "sequence": 1,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange wool coat walking into frame left on golden-hour tree-lined park path, soft bokeh foliage, shallow DoF, 50mm lens, warm even light, no text, no logos, no people beyond C01",
+          "title": "Path entrance",
+          "video_prompt": "Medium full shot, slow lateral right glide, woman in rust-orange coat walking steadily on paved autumn park path, golden hour light, maple and oak trees overhead, falling leaves visible in background, shallow depth of field, cinematic realism"
+        },
+        {
+          "action": "C01 continues walking forward, head slightly lifted. A cluster of amber and crimson leaves detaches above and drifts down just ahead of her.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B02",
+          "camera": {
+            "angle": "Slightly low angle to emphasize canopy height",
+            "framing": "Medium shot",
+            "lens": "35mm, shallow DoF \u2014 branches softly blurred overhead",
+            "movement": "Slow push-in toward C01's upper body"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still walking, leaf drift completes",
+              "position": "same, slight upward tilt of chin"
+            },
+            "location": "Same park path, same tree species, same light quality",
+            "required_props": [],
+            "start_state": {
+              "motion": "walking forward at same pace",
+              "position": "mid-path, center-frame"
+            },
+            "time_of_day": "Golden hour \u2014 consistent warmth and shadow length",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Leaves remember how to fall.",
+          "duration_seconds": 4,
+          "emotion": "Gentle wonder",
+          "id": "S02",
+          "location": "Same park path, slightly tighter framing under denser canopy.",
+          "max_retries": 1,
+          "narration": "Leaves remember how to fall.",
+          "narrative_objective": "Emphasize immersion in seasonal atmosphere \u2014 light filtering through branches, leaves swirling.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.57,
+          "sequence": 2,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat walking under autumn tree canopy, golden light filtering through, leaves drifting down, medium shot, shallow DoF, 35mm lens, warm tone, no text or logos",
+          "title": "Canopy walk",
+          "video_prompt": "Medium shot, slow push-in, woman in rust-orange coat walking under autumn canopy, sunlight dappling her shoulders, several leaves drifting down in front of her, shallow depth of field, cinematic realism, golden-hour lighting"
+        },
+        {
+          "action": "C01 halts mid-step. Her gaze lifts. A single large maple leaf spirals down in front of her, landing softly on the path near her boot.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B03",
+          "camera": {
+            "angle": "Eye level",
+            "framing": "Medium close-up",
+            "lens": "85mm, shallow DoF \u2014 background foliage melts into warm bokeh",
+            "movement": "Very slight slow zoom-in on face"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "gaze fixed upward, breath steady",
+              "position": "fully still, weight balanced"
+            },
+            "location": "Same park path, same light, same trees",
+            "required_props": [],
+            "start_state": {
+              "motion": "stopping smoothly",
+              "position": "mid-path, walking"
+            },
+            "time_of_day": "Golden hour \u2014 consistent color temperature and direction",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Time slows without warning.",
+          "duration_seconds": 4,
+          "emotion": "Quiet reverence",
+          "id": "S03",
+          "location": "Same path, same lighting \u2014 now centered on her stillness.",
+          "max_retries": 2,
+          "narration": "Time slows without warning.",
+          "narrative_objective": "Break motion to spotlight attention \u2014 she stops, watches a single leaf descend.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.82,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "salience": 1.0,
+          "sequence": 3,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat paused mid-autumn park path, looking up as single maple leaf falls, medium close-up, shallow DoF, golden-hour light, no text, no logos",
+          "title": "Mid-path pause",
+          "video_prompt": "Medium close-up, slight slow zoom-in, woman in rust-orange coat standing still on paved park path, looking up as one large amber maple leaf spirals down in front of her, shallow depth of field, warm golden light, cinematic realism"
+        },
+        {
+          "action": "C01 resumes walking, now angled toward a weathered wooden bench set slightly off-path to the right. She takes three deliberate steps toward it.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B04",
+          "camera": {
+            "angle": "Slightly high angle to include bench in frame",
+            "framing": "Wide medium shot",
+            "lens": "40mm, shallow DoF \u2014 bench softly defined, background trees out of focus",
+            "movement": "Slow lateral glide right, following her turn"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "slowing to stop",
+              "position": "three paces from bench, facing it"
+            },
+            "location": "Same park path, same bench, same lighting",
+            "required_props": [],
+            "start_state": {
+              "motion": "resuming walk",
+              "position": "mid-path facing forward"
+            },
+            "time_of_day": "Golden hour \u2014 consistent shadows cast by bench legs",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "The bench waits patiently.",
+          "duration_seconds": 4,
+          "emotion": "Tranquil intention",
+          "id": "S04",
+          "location": "Same path, bench now visible \u2014 rustic, unpainted pine, slightly moss-touched legs.",
+          "max_retries": 1,
+          "narration": "The bench waits patiently.",
+          "narrative_objective": "Introduce weathered wooden bench as destination \u2014 visual anchor for next beat.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.83,
+          "sequence": 4,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat walking toward weathered wooden bench on autumn park path, golden hour light, wide medium shot, shallow DoF, no text, no logos",
+          "title": "Bench approach",
+          "video_prompt": "Wide medium shot, slow lateral right glide, woman in rust-orange coat walking three steps toward rustic wooden bench on paved park path, fallen leaves around bench, shallow depth of field, warm golden light, cinematic realism"
+        },
+        {
+          "action": "C01 sits on the bench, smoothing her coat over her thighs. She rests hands lightly on knees. A breeze stirs her hair slightly.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B05",
+          "camera": {
+            "angle": "Eye level, slightly angled to show profile and bench edge",
+            "framing": "Medium shot",
+            "lens": "50mm, shallow DoF \u2014 bench texture visible but soft, background trees out of focus",
+            "movement": "Slow push-in to chest level"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still, slight breeze movement in hair",
+              "position": "seated upright, hands resting"
+            },
+            "location": "Same bench, same path, same lighting",
+            "required_props": [],
+            "start_state": {
+              "motion": "beginning to sit",
+              "position": "standing beside bench"
+            },
+            "time_of_day": "Golden hour \u2014 consistent rim light on her hair and coat collar",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "She lets go completely.",
+          "duration_seconds": 4,
+          "emotion": "Deep calm",
+          "id": "S05",
+          "location": "Same bench, same path, same light \u2014 now focused on her seated posture.",
+          "max_retries": 1,
+          "narration": "She lets go completely.",
+          "narrative_objective": "Physical grounding \u2014 she sits, exhales, lets coat settle.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.83,
+          "sequence": 5,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat seated on weathered wooden bench in autumn park, golden hour light, medium shot, shallow DoF, no text, no logos",
+          "title": "Settle on bench",
+          "video_prompt": "Medium shot, slow push-in, woman in rust-orange coat seated on rustic wooden bench in park, hands resting on knees, breeze stirring hair slightly, shallow depth of field, warm golden light, cinematic realism"
+        },
+        {
+          "action": "C01 turns her head slowly right, eyes lifting toward horizon. Sunlight catches the rim of her coat collar and hair. Distant treeline glows amber.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B06",
+          "camera": {
+            "angle": "Eye level, tracking her gaze",
+            "framing": "Medium close-up, three-quarter profile",
+            "lens": "85mm, shallow DoF \u2014 horizon softly rendered, foreground sharp",
+            "movement": "Very slow tilt up from eyes to horizon line"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still, breathing steady",
+              "position": "seated, head turned, eyes lifted"
+            },
+            "location": "Same bench, same path, same lighting \u2014 now with visible horizon glow",
+            "required_props": [],
+            "start_state": {
+              "motion": "turning head right",
+              "position": "seated, facing front"
+            },
+            "time_of_day": "Golden hour \u2014 sun low, diffused, no glare or bloom",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Light ends where she begins.",
+          "duration_seconds": 4,
+          "emotion": "Quiet awe",
+          "id": "S06",
+          "location": "Same bench, same path \u2014 now emphasizing depth and distance.",
+          "max_retries": 2,
+          "narration": "Light ends where she begins.",
+          "narrative_objective": "Emotional and visual culmination \u2014 her gaze follows light toward distant treeline; sun glows softly beyond.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.82,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "salience": 1.0,
+          "sequence": 6,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat seated on wooden bench gazing toward amber-lit horizon in autumn park, medium close-up, shallow DoF, golden-hour light, no text, no logos",
+          "title": "Horizon gaze",
+          "video_prompt": "Medium close-up, slow tilt up from eyes to horizon, woman in rust-orange coat seated on rustic bench gazing right, distant treeline glowing amber, shallow depth of field, warm golden light, cinematic realism"
+        }
+      ],
+      "synopsis": "Over 24 seconds, six cinematic shots trace a woman\u2019s unhurried journey along a tree-lined park path at golden hour. She moves with quiet intention\u2014walking, pausing, sitting, gazing\u2014each shot bound by consistent character, lighting, location, and gentle motion. Warm, soft natural light bathes the scene; shallow depth of field and subtle camera movement reinforce intimacy and stillness. No text, signage, logos, or handheld props appear. Every shot includes one five-word-or-fewer English narration line.",
+      "theme": "Calm presence in transient beauty",
+      "title": "Autumn Path",
+      "visual_rules": [
+        "Grounded cinematic realism only",
+        "Soft even golden-hour light (no direct sun flares or bright sources)",
+        "Shallow depth of field throughout",
+        "Gentle camera moves: slow push-ins, lateral glides, or slight tilts \u2014 never whip pans or drones",
+        "No text, numerals, logos, signage, reflections of text, or HUD elements",
+        "One primary location: paved tree-lined park path with weathered wooden bench and mature deciduous trees",
+        "Consistent character appearance and wardrobe across all shots"
+      ]
+    },
+    "shots": [
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue.wav",
+        "contract": {
+          "action": "C01 walks into frame from screen left, stepping onto paved path lined with tall maple and oak trees. Leaves drift gently in background. She walks with relaxed shoulders, hands in coat pockets.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B01",
+          "camera": {
+            "angle": "Eye level",
+            "framing": "Medium full shot",
+            "lens": "50mm, shallow depth of field \u2014 foreground leaves softly blurred",
+            "movement": "Slow lateral glide right, matching her pace"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "continuing forward",
+              "position": "center-frame, mid-path"
+            },
+            "location": "Same park path, consistent tree species and paving",
+            "required_props": [],
+            "start_state": {
+              "motion": "entering frame walking forward at steady pace",
+              "position": "off-screen left"
+            },
+            "time_of_day": "Golden hour \u2014 low sun, warm diffuse light, no harsh highlights",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Sunlight holds its breath.",
+          "duration_seconds": 4,
+          "emotion": "Calm anticipation",
+          "id": "S01",
+          "location": "Tree-lined park path \u2014 paved, gravel-shouldered, dappled with long shadows and amber light.",
+          "max_retries": 1,
+          "narration": "Sunlight holds its breath.",
+          "narrative_objective": "Establish golden-hour park path, introduce C01 walking into frame from left, coat catching warm light.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.57,
+          "sequence": 1,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange wool coat walking into frame left on golden-hour tree-lined park path, soft bokeh foliage, shallow DoF, 50mm lens, warm even light, no text, no logos, no people beyond C01",
+          "title": "Path entrance",
+          "video_prompt": "Medium full shot, slow lateral right glide, woman in rust-orange coat walking steadily on paved autumn park path, golden hour light, maple and oak trees overhead, falling leaves visible in background, shallow depth of field, cinematic realism"
+        },
+        "id": "97b46828-2371-4997-beaf-1b15b6cac539",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.92,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 1,
+        "shot_code": "S01",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempt-1.mp4"
+      },
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue.wav",
+        "contract": {
+          "action": "C01 continues walking forward, head slightly lifted. A cluster of amber and crimson leaves detaches above and drifts down just ahead of her.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B02",
+          "camera": {
+            "angle": "Slightly low angle to emphasize canopy height",
+            "framing": "Medium shot",
+            "lens": "35mm, shallow DoF \u2014 branches softly blurred overhead",
+            "movement": "Slow push-in toward C01's upper body"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still walking, leaf drift completes",
+              "position": "same, slight upward tilt of chin"
+            },
+            "location": "Same park path, same tree species, same light quality",
+            "required_props": [],
+            "start_state": {
+              "motion": "walking forward at same pace",
+              "position": "mid-path, center-frame"
+            },
+            "time_of_day": "Golden hour \u2014 consistent warmth and shadow length",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Leaves remember how to fall.",
+          "duration_seconds": 4,
+          "emotion": "Gentle wonder",
+          "id": "S02",
+          "location": "Same park path, slightly tighter framing under denser canopy.",
+          "max_retries": 1,
+          "narration": "Leaves remember how to fall.",
+          "narrative_objective": "Emphasize immersion in seasonal atmosphere \u2014 light filtering through branches, leaves swirling.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.57,
+          "sequence": 2,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat walking under autumn tree canopy, golden light filtering through, leaves drifting down, medium shot, shallow DoF, 35mm lens, warm tone, no text or logos",
+          "title": "Canopy walk",
+          "video_prompt": "Medium shot, slow push-in, woman in rust-orange coat walking under autumn canopy, sunlight dappling her shoulders, several leaves drifting down in front of her, shallow depth of field, cinematic realism, golden-hour lighting"
+        },
+        "id": "60b9d12c-0c64-4a37-8e54-a06bc52c2fec",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.89,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 2,
+        "shot_code": "S02",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempt-1.mp4"
+      },
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue.wav",
+        "contract": {
+          "action": "C01 halts mid-step. Her gaze lifts. A single large maple leaf spirals down in front of her, landing softly on the path near her boot.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B03",
+          "camera": {
+            "angle": "Eye level",
+            "framing": "Medium close-up",
+            "lens": "85mm, shallow DoF \u2014 background foliage melts into warm bokeh",
+            "movement": "Very slight slow zoom-in on face"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "gaze fixed upward, breath steady",
+              "position": "fully still, weight balanced"
+            },
+            "location": "Same park path, same light, same trees",
+            "required_props": [],
+            "start_state": {
+              "motion": "stopping smoothly",
+              "position": "mid-path, walking"
+            },
+            "time_of_day": "Golden hour \u2014 consistent color temperature and direction",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Time slows without warning.",
+          "duration_seconds": 4,
+          "emotion": "Quiet reverence",
+          "id": "S03",
+          "location": "Same path, same lighting \u2014 now centered on her stillness.",
+          "max_retries": 2,
+          "narration": "Time slows without warning.",
+          "narrative_objective": "Break motion to spotlight attention \u2014 she stops, watches a single leaf descend.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.82,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "salience": 1.0,
+          "sequence": 3,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat paused mid-autumn park path, looking up as single maple leaf falls, medium close-up, shallow DoF, golden-hour light, no text, no logos",
+          "title": "Mid-path pause",
+          "video_prompt": "Medium close-up, slight slow zoom-in, woman in rust-orange coat standing still on paved park path, looking up as one large amber maple leaf spirals down in front of her, shallow depth of field, warm golden light, cinematic realism"
+        },
+        "id": "efabe2d9-09b2-4d69-9ca8-62e6c7a76a4a",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.85,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 3,
+        "shot_code": "S03",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempt-1.mp4"
+      },
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue.wav",
+        "contract": {
+          "action": "C01 resumes walking, now angled toward a weathered wooden bench set slightly off-path to the right. She takes three deliberate steps toward it.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B04",
+          "camera": {
+            "angle": "Slightly high angle to include bench in frame",
+            "framing": "Wide medium shot",
+            "lens": "40mm, shallow DoF \u2014 bench softly defined, background trees out of focus",
+            "movement": "Slow lateral glide right, following her turn"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "slowing to stop",
+              "position": "three paces from bench, facing it"
+            },
+            "location": "Same park path, same bench, same lighting",
+            "required_props": [],
+            "start_state": {
+              "motion": "resuming walk",
+              "position": "mid-path facing forward"
+            },
+            "time_of_day": "Golden hour \u2014 consistent shadows cast by bench legs",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "The bench waits patiently.",
+          "duration_seconds": 4,
+          "emotion": "Tranquil intention",
+          "id": "S04",
+          "location": "Same path, bench now visible \u2014 rustic, unpainted pine, slightly moss-touched legs.",
+          "max_retries": 1,
+          "narration": "The bench waits patiently.",
+          "narrative_objective": "Introduce weathered wooden bench as destination \u2014 visual anchor for next beat.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.83,
+          "sequence": 4,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat walking toward weathered wooden bench on autumn park path, golden hour light, wide medium shot, shallow DoF, no text, no logos",
+          "title": "Bench approach",
+          "video_prompt": "Wide medium shot, slow lateral right glide, woman in rust-orange coat walking three steps toward rustic wooden bench on paved park path, fallen leaves around bench, shallow depth of field, warm golden light, cinematic realism"
+        },
+        "id": "96826451-98db-400d-bfb0-dbc210f8eba5",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.87,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 4,
+        "shot_code": "S04",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempt-1.mp4"
+      },
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue.wav",
+        "contract": {
+          "action": "C01 sits on the bench, smoothing her coat over her thighs. She rests hands lightly on knees. A breeze stirs her hair slightly.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B05",
+          "camera": {
+            "angle": "Eye level, slightly angled to show profile and bench edge",
+            "framing": "Medium shot",
+            "lens": "50mm, shallow DoF \u2014 bench texture visible but soft, background trees out of focus",
+            "movement": "Slow push-in to chest level"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still, slight breeze movement in hair",
+              "position": "seated upright, hands resting"
+            },
+            "location": "Same bench, same path, same lighting",
+            "required_props": [],
+            "start_state": {
+              "motion": "beginning to sit",
+              "position": "standing beside bench"
+            },
+            "time_of_day": "Golden hour \u2014 consistent rim light on her hair and coat collar",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "She lets go completely.",
+          "duration_seconds": 4,
+          "emotion": "Deep calm",
+          "id": "S05",
+          "location": "Same bench, same path, same light \u2014 now focused on her seated posture.",
+          "max_retries": 1,
+          "narration": "She lets go completely.",
+          "narrative_objective": "Physical grounding \u2014 she sits, exhales, lets coat settle.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.8,
+          "renderer": "wan_r2v",
+          "resolution": "720P",
+          "salience": 0.83,
+          "sequence": 5,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat seated on weathered wooden bench in autumn park, golden hour light, medium shot, shallow DoF, no text, no logos",
+          "title": "Settle on bench",
+          "video_prompt": "Medium shot, slow push-in, woman in rust-orange coat seated on rustic wooden bench in park, hands resting on knees, breeze stirring hair slightly, shallow depth of field, warm golden light, cinematic realism"
+        },
+        "id": "46e2c92b-df15-4d22-ab1e-5a53a920aa9f",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.87,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 5,
+        "shot_code": "S05",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempt-1.mp4"
+      },
+      {
+        "accepted": true,
+        "attempts": 1,
+        "audio_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue.wav",
+        "contract": {
+          "action": "C01 turns her head slowly right, eyes lifting toward horizon. Sunlight catches the rim of her coat collar and hair. Distant treeline glows amber.",
+          "aspect_ratio": "16:9",
+          "beat_id": "B06",
+          "camera": {
+            "angle": "Eye level, tracking her gaze",
+            "framing": "Medium close-up, three-quarter profile",
+            "lens": "85mm, shallow DoF \u2014 horizon softly rendered, foreground sharp",
+            "movement": "Very slow tilt up from eyes to horizon line"
+          },
+          "characters": [
+            "C01"
+          ],
+          "continuity": {
+            "end_state": {
+              "motion": "still, breathing steady",
+              "position": "seated, head turned, eyes lifted"
+            },
+            "location": "Same bench, same path, same lighting \u2014 now with visible horizon glow",
+            "required_props": [],
+            "start_state": {
+              "motion": "turning head right",
+              "position": "seated, facing front"
+            },
+            "time_of_day": "Golden hour \u2014 sun low, diffused, no glare or bloom",
+            "wardrobe": {
+              "bottom": "charcoal trousers",
+              "coat": "rust-orange wool",
+              "footwear": "brown leather boots",
+              "top": "cream turtleneck"
+            }
+          },
+          "dialogue": "Light ends where she begins.",
+          "duration_seconds": 4,
+          "emotion": "Quiet awe",
+          "id": "S06",
+          "location": "Same bench, same path \u2014 now emphasizing depth and distance.",
+          "max_retries": 2,
+          "narration": "Light ends where she begins.",
+          "narrative_objective": "Emotional and visual culmination \u2014 her gaze follows light toward distant treeline; sun glows softly beyond.",
+          "negative_prompt": "identity drift, extra fingers, deformed face, illegible text, flicker",
+          "quality_threshold": 0.82,
+          "renderer": "wan_r2v",
+          "resolution": "1080P",
+          "salience": 1.0,
+          "sequence": 6,
+          "storyboard_prompt": "Cinematic realism, woman in rust-orange coat seated on wooden bench gazing toward amber-lit horizon in autumn park, medium close-up, shallow DoF, golden-hour light, no text, no logos",
+          "title": "Horizon gaze",
+          "video_prompt": "Medium close-up, slow tilt up from eyes to horizon, woman in rust-orange coat seated on rustic bench gazing right, distant treeline glowing amber, shallow depth of field, warm golden light, cinematic realism"
+        },
+        "id": "6da0d3da-0bcd-412b-9bec-2d6c6ee6218f",
+        "quality": {
+          "attempt": 1,
+          "dimensions": [],
+          "evaluator_model": "qwen3-vl-flash",
+          "overall_score": 0.91,
+          "passed": true,
+          "repair_instruction": null,
+          "repair_strategy": "none",
+          "violations": []
+        },
+        "sequence": 6,
+        "shot_code": "S06",
+        "status": "accepted",
+        "storyboard_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard.png",
+        "video_url": "https://directorgraph.47.84.232.193.sslip.io/media/projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempt-1.mp4"
+      }
+    ],
+    "status": "completed",
+    "title": "Autumn Path",
+    "updated_at": "2026-07-08T00:24:23.895913Z"
+  },
+  "public_demo_storage_manifest": {
+    "generated_at": "2026-07-08T06:17:05.439203+00:00",
+    "manifest": {
+      "created_at": "2026-07-08T00:09:05.800734Z",
+      "final_manifest_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+      "object_keys": [
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905804137Z-sql-343.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906044159Z-sql-344.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906127116Z-sql-345.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000907144767Z-sql-346.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001034609204Z-sql-347.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035719856Z-sql-348.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035809684Z-sql-349.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001058322060Z-sql-350.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102456858Z-sql-351.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102770542Z-sql-352.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103059128Z-sql-353.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103425689Z-sql-354.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103785865Z-sql-355.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001104086464Z-sql-356.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001126826687Z-sql-357.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001147492123Z-sql-358.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001158760786Z-sql-359.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001219753479Z-sql-360.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001231094073Z-sql-361.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001251807321Z-sql-362.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252540422Z-sql-363.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252864819Z-sql-364.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001426647101Z-sql-365.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001434932313Z-sql-366.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001435914494Z-sql-367.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001611026039Z-sql-368.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001618283550Z-sql-369.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001619171360Z-sql-370.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001809382975Z-sql-371.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817049597Z-sql-372.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817880868Z-sql-373.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002007976894Z-sql-374.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015025293Z-sql-375.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015805353Z-sql-376.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002149948273Z-sql-377.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002156804764Z-sql-378.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002157593973Z-sql-379.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002403294852Z-sql-380.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002411639374Z-sql-381.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002412562997Z-sql-382.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423817907Z-sql-383.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423897264Z-sql-384.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/final/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/current.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-render.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-dialogue-tts.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-storyboard.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-character-C01-reference.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc-submission.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-story-planning.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/read-model.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/requests/original.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempt-1.mp4",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/asset-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/inspection.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-task.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/contract.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue.wav",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/status.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-materialization.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-provider-result.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard.png",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+        "projects/0bc17703-d506-4590-86b3-080792f4d239/tasks/dg-run-project-f862ce887df9149c36942cfc/status.json"
+      ],
+      "project_id": "0bc17703-d506-4590-86b3-080792f4d239",
+      "schema_version": "directorgraph.project-manifest.v1",
+      "status": "completed",
+      "story_ir_key": "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+      "title": "Autumn Path",
+      "updated_at": "2026-07-08T00:24:23.895913Z"
+    },
+    "manifest_ref": {
+      "content_type": "application/json",
+      "etag": "450f577e9366cef3dcd876d5a0f59b1beba1607677c942ddd0358b507add7410",
+      "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/manifest.json",
+      "size_bytes": 15718,
+      "updated_at": "2026-07-08T00:24:24.861565Z"
+    },
+    "project_id": "0bc17703-d506-4590-86b3-080792f4d239",
+    "schema": "directorgraph.storage-manifest-read.v1",
+    "signed_objects": [
+      {
+        "expires_at": "2026-07-08T06:32:04.314694Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.320289Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.326018Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/characters/C01/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.332480Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.338149Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000905804137Z-sql-343.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.343545Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906044159Z-sql-344.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.348764Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000906127116Z-sql-345.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.354240Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T000907144767Z-sql-346.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.359572Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001034609204Z-sql-347.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.364810Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035719856Z-sql-348.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.370191Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001035809684Z-sql-349.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.375565Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001058322060Z-sql-350.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.380843Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102456858Z-sql-351.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.386011Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001102770542Z-sql-352.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.391255Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103059128Z-sql-353.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.396429Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103425689Z-sql-354.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.401665Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001103785865Z-sql-355.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.406781Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001104086464Z-sql-356.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.412217Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001126826687Z-sql-357.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.417234Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001147492123Z-sql-358.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.422977Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001158760786Z-sql-359.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.427804Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001219753479Z-sql-360.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.432656Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001231094073Z-sql-361.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.437866Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001251807321Z-sql-362.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.443265Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252540422Z-sql-363.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.448494Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001252864819Z-sql-364.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.453650Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001426647101Z-sql-365.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.458512Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001434932313Z-sql-366.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.463178Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001435914494Z-sql-367.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.468021Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001611026039Z-sql-368.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.472963Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001618283550Z-sql-369.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.477930Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001619171360Z-sql-370.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.482906Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001809382975Z-sql-371.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.487815Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817049597Z-sql-372.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.492773Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T001817880868Z-sql-373.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.497817Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002007976894Z-sql-374.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.503012Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015025293Z-sql-375.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.507869Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002015805353Z-sql-376.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.512763Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002149948273Z-sql-377.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.517732Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002156804764Z-sql-378.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.522513Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002157593973Z-sql-379.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.527407Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002403294852Z-sql-380.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.532332Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002411639374Z-sql-381.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.537030Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002412562997Z-sql-382.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.542119Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423817907Z-sql-383.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.547169Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/events/20260708T002423897264Z-sql-384.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.552050Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.575584Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/directorgraph-master.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.580469Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/final/manifest.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.585347Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/current.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.590174Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.595132Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.600015Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.604776Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S01-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.609651Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.614343Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.619324Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.624072Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S02-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.628896Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.633748Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.638505Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.643271Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S03-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.648396Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.653141Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.657922Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.662701Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S04-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.667667Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.672320Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.677161Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.682366Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S05-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.687739Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.692662Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-attempt-1-render.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.697798Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-dialogue-tts.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.702717Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-S06-storyboard.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.708044Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-character-C01-reference.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.713071Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-dg-run-project-f862ce887df9149c36942cfc-submission.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.717887Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/ledger/entries/20260708T000905800734Z-story-planning.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.722758Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/read-model.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.727847Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/requests/original.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.737154Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.742307Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.747239Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.752168Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.756952Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.761813Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.766778Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.771600Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.791819Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.796842Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.802009Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.807032Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.816358Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S01/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.846685Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.851985Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.856934Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.862211Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.867318Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.872403Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.877513Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.882287Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.891767Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.897011Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.902040Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.925560Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.950748Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S02/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.960030Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.964820Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.969778Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.974673Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.979475Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.984361Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.989164Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:04.994203Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.023633Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.028792Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.033891Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.038917Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.063981Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S03/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.085511Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.091209Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.096488Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.101706Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.107432Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.112710Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.118042Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.123258Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.142483Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.147426Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.152402Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.157608Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.192507Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S04/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.211723Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.217270Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.245726Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.250721Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.255465Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.260301Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.265474Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.270643Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.280798Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.285600Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.290384Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.295594Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.313105Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S05/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.337151Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempt-1.mp4",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.343746Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/asset-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.349878Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/inspection.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.354559Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.359152Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/attempts/attempt-1/provider-task.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.364043Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/contract.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.368748Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.373751Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.394279Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/dialogue.wav",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.399347Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.404279Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-materialization.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.409283Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard-provider-result.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.428890Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/shots/S06/storyboard.png",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.433956Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/story/story-ir.v1.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      },
+      {
+        "expires_at": "2026-07-08T06:32:05.439088Z",
+        "key": "projects/0bc17703-d506-4590-86b3-080792f4d239/tasks/dg-run-project-f862ce887df9149c36942cfc/status.json",
+        "method": "GET",
+        "redaction_reason": "signed OSS URL omitted from committed evidence",
+        "url": "redacted-signed-oss-url",
+        "url_redacted": true
+      }
+    ]
+  },
+  "readiness": {
+    "build": {
+      "sha": "eeac6a6-dirty",
+      "timestamp": "2026-07-07T19:06:06Z"
+    },
+    "checks": {
+      "app_mode_valid": true,
+      "database_configured": true,
+      "function_compute_task_configured": true,
+      "live_credentials_ready": true,
+      "media_publication_ready": true,
+      "media_root_configured": true,
+      "oss_ready": true,
+      "provider_configured": true,
+      "sql_startup_required": true,
+      "state_backend_valid": true
+    },
+    "limits": {
+      "judge_access_code_configured": true,
+      "judge_run_max_duration_seconds": 15,
+      "judge_run_max_shots": 3,
+      "max_project_spend_usd": 15.0,
+      "max_render_attempts_per_shot": 2,
+      "max_total_live_spend_usd": 40.0,
+      "public_demo_project_configured": true,
+      "repair_reserve_percent": 20
+    },
+    "mode": "web",
+    "provider_mode": "live",
+    "service": "DirectorGraph",
+    "state_backend": "local",
+    "status": "ready",
+    "version": "0.1.0"
+  },
+  "schema": "directorgraph.serverless-live-verification.v1",
+  "task_id": null,
+  "task_status": null,
+  "verified_at": "2026-07-08T06:17:05.843274+00:00"
+}

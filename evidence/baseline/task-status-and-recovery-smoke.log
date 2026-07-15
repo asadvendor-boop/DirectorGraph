@@ -1,0 +1,9 @@
+{
+  "provider_key": "projects/project-recovery/shots/S01/attempts/attempt-1/provider-task.json",
+  "provider_poll_failure_checkpointed": true,
+  "provider_task_id_checkpoint": "task-before-poll-failure",
+  "status": "passed",
+  "task_id": "dg-run-project-5613f3c27ebaaf0753b23f5b",
+  "task_status": "pending",
+  "task_status_route_job_id": "15edbf44-9dd2-4b19-b1ad-427942aa8db1"
+}

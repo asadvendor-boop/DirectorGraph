@@ -1,0 +1,26 @@
+{
+  "build": {
+    "sha": "eeac6a6-dirty",
+    "timestamp": "2026-07-07T19:06:06Z"
+  },
+  "deployment": {
+    "dashscope_region": "singapore",
+    "function_compute_task_configured": true,
+    "live_ready": true,
+    "oss_ready": true
+  },
+  "environment": "production",
+  "limits": {
+    "judge_run_max_duration_seconds": 15,
+    "judge_run_max_shots": 3,
+    "max_project_spend_usd": 15.0,
+    "max_total_live_spend_usd": 40.0
+  },
+  "mode": "web",
+  "provider_mode": "live",
+  "service": "DirectorGraph",
+  "state_backend": "local",
+  "status": "ok",
+  "time": "2026-07-08T06:17:00.861810+00:00",
+  "version": "0.1.0"
+}

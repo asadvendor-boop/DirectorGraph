@@ -1,0 +1,22 @@
+{
+  "base_url": "https://directorgraph.47.84.232.193.sslip.io",
+  "evidence_files": [
+    "config.json",
+    "health.json",
+    "image-digest.json",
+    "live-judge-test-smoke.json",
+    "private-oss-access-check.json",
+    "public-demo-check.json",
+    "public-demo-manifest.json",
+    "public-demo-storage-manifest.json",
+    "public-demo.json",
+    "readiness.json",
+    "serverless-deploy-plan.json",
+    "serverless-live-verification.json",
+    "serverless-verification-summary.json",
+    "task-dg-run-project-03401bfb25942de7355ee2a2.json"
+  ],
+  "schema": "directorgraph.serverless-verification-summary.v1",
+  "task_id": null,
+  "verified_at": "2026-07-08T06:17:05.843274+00:00"
+}

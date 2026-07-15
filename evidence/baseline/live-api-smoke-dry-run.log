@@ -1,0 +1,13 @@
+{
+  "approval_env": "DIRECTORGRAPH_APPROVE_LIVE_API_SMOKE",
+  "approval_value": "run-live-api-smoke",
+  "base_url_host": "dashscope-intl.aliyuncs.com",
+  "outputs": [
+    "evidence/live-api/model-smoke.json",
+    "evidence/live-api/redacted-response-fixtures.json"
+  ],
+  "repository_commit": "23ef6ab684df136059e87c0ddd734165b28d7e1d",
+  "schema": "directorgraph.live-api-smoke-plan.v1",
+  "story_model": "qwen-plus",
+  "vision_model": "qwen3-vl-flash"
+}

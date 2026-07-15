@@ -1,0 +1,25 @@
+{
+  "output": "evidence/deployment/image-digest.json",
+  "policy": "web and task Function Compute functions must use the same sha256 image digest",
+  "required": [
+    "IMAGE_DIGEST or both WEB_IMAGE_DIGEST and TASK_IMAGE_DIGEST"
+  ],
+  "schema": "directorgraph.image-digest-plan.v1"
+}
+{
+  "accepted_minimum_keys": [
+    "minimum_instances",
+    "min_instances",
+    "minInstanceCount",
+    "minimumInstanceCount"
+  ],
+  "accepted_provisioned_keys": [
+    "provisioned_instances",
+    "provisioned_target",
+    "provisionedInstanceCount"
+  ],
+  "output": "evidence/deployment/function-min-instances.json",
+  "policy": "all minimum and provisioned instance values must be zero",
+  "required_input": "JSON export with web and task Function Compute records",
+  "schema": "directorgraph.function-min-instances-plan.v1"
+}

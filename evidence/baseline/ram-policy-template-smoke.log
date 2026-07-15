@@ -1,0 +1,11 @@
+docs/API_COMPATIBILITY.md:52:- Relevance to DirectorGraph: RAM policy templates should remain JSON identity policies attached to the Function Compute execution role, while bucket policies and trust policies are separate resource/trust controls.
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:7:        "oss:GetBucketInfo",
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:8:        "oss:ListObjects"
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:11:        "acs:oss:${ALIBABA_REGION}:${ALIBABA_ACCOUNT_ID}:${OSS_BUCKET}"
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:17:        "oss:GetObject",
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:18:        "oss:PutObject"
+infra/alibaba/serverless/ram-policy.runtime-oss.template.json:21:        "acs:oss:${ALIBABA_REGION}:${ALIBABA_ACCOUNT_ID}:${OSS_BUCKET}/*"
+infra/alibaba/serverless/README.md:15:| `${OSS_BUCKET}` | Private DirectorGraph bucket name. |
+infra/alibaba/serverless/README.md:38:- Alibaba Cloud OSS RAM policy documentation, retrieved 2026-06-24: https://www.alibabacloud.com/help/en/oss/user-guide/ram-policy/
+infra/alibaba/serverless/README.md:39:- Alibaba Cloud OSS RAM policy examples and resource format, retrieved 2026-06-24: https://help.aliyun.com/en/oss/common-examples-of-ram-policies
+infra/alibaba/serverless/README.md:40:- Alibaba Cloud RAM policy elements, retrieved 2026-06-24: https://www.alibabacloud.com/help/en/ram/policy-elements

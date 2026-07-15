@@ -1,0 +1,17 @@
+#cloud-config
+package_update: true
+packages:
+  - git
+  - ca-certificates
+  - curl
+write_files:
+  - path: /etc/directorgraph.env
+    permissions: '0600'
+    content: |
+      # Add secrets through ECS user-data only for a short-lived demo, or use KMS/Secrets Manager.
+      PROVIDER_MODE=mock
+runcmd:
+  - curl -fsSL https://get.docker.com | sh
+  - systemctl enable --now docker
+  - mkdir -p /opt/directorgraph
+final_message: "ECS bootstrap complete. Clone DirectorGraph into /opt/directorgraph and run infra/alibaba/deploy-ecs.sh."

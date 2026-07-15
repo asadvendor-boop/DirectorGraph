@@ -1,0 +1,19 @@
+{
+  "functions": [
+    {
+      "function_name": "directorgraph-api",
+      "image_digest": "sha256:0cbb47cd16d2eabc15f265c74fcc09ab32bf9eebccd74a391a3d552c8b70d717",
+      "role": "web"
+    },
+    {
+      "function_name": "directorgraph-task",
+      "image_digest": "sha256:0cbb47cd16d2eabc15f265c74fcc09ab32bf9eebccd74a391a3d552c8b70d717",
+      "role": "task"
+    }
+  ],
+  "generated_at": "2026-06-28T16:45:56.728396+00:00",
+  "image_uri": "directorgraph-app",
+  "repository_commit": "unknown",
+  "schema": "directorgraph.image-digest.v1",
+  "shared_image_digest": "sha256:0cbb47cd16d2eabc15f265c74fcc09ab32bf9eebccd74a391a3d552c8b70d717"
+}

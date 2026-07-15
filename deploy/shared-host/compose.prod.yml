@@ -1,0 +1,160 @@
+name: directorgraph
+
+x-logging: &bounded-logging
+  driver: local
+  options:
+    max-size: "20m"
+    max-file: "5"
+
+x-api-env: &api-env
+  APP_ENV: production
+  ENVIRONMENT: production
+  BUILD_SHA: ${BUILD_SHA:-local}
+  BUILD_TIMESTAMP: ${BUILD_TIMESTAMP:-local}
+  PROVIDER_MODE: live
+  STATE_BACKEND: local
+  DATABASE_URL: postgresql+psycopg://directorgraph:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres:5432/directorgraph
+  MEDIA_ROOT: /var/lib/directorgraph/media
+  PUBLIC_MEDIA_BASE_URL: ${PUBLIC_MEDIA_BASE_URL:?set PUBLIC_MEDIA_BASE_URL}
+  CORS_ORIGINS: ${CORS_ORIGINS:?set CORS_ORIGINS}
+  INLINE_WORKER: "false"
+  SEED_DEMO: "false"
+  JUDGE_CREATE_ACCESS_CODE: ${JUDGE_CREATE_ACCESS_CODE:?set JUDGE_CREATE_ACCESS_CODE}
+  FUNCTION_COMPUTE_TASK_URL: http://task:8000/api/function-compute/tasks
+  FUNCTION_COMPUTE_AUTH_HEADER: ${FUNCTION_COMPUTE_AUTH_HEADER:?set FUNCTION_COMPUTE_AUTH_HEADER}
+  FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS: ${FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS:-20}
+  DASHSCOPE_API_KEY: ${DASHSCOPE_API_KEY:?set Qwen Cloud media API key}
+  DASHSCOPE_NATIVE_BASE_URL: ${DASHSCOPE_NATIVE_BASE_URL:?set Qwen Cloud media endpoint}
+  QWEN_API_KEY: ${QWEN_API_KEY:?set Frankfurt Qwen text API key}
+  QWEN_BASE_URL: ${QWEN_BASE_URL:?set Frankfurt Qwen OpenAI-compatible endpoint}
+  QWEN_STORY_MODEL: ${QWEN_STORY_MODEL:-qwen-plus}
+  QWEN_VISION_MODEL: ${QWEN_VISION_MODEL:-qwen3-vl-flash}
+  WAN_IMAGE_MODEL: ${WAN_IMAGE_MODEL:-wan2.6-t2i}
+  WAN_VIDEO_MODEL: ${WAN_VIDEO_MODEL:-wan2.6-i2v}
+  WAN_REFERENCE_MODEL: ${WAN_REFERENCE_MODEL:-wan2.7-r2v}
+  HAPPYHORSE_VIDEO_MODEL: ${HAPPYHORSE_VIDEO_MODEL:-happyhorse-1.1-t2v}
+  HAPPYHORSE_EDIT_MODEL: ${HAPPYHORSE_EDIT_MODEL:-happyhorse-1.1-t2v}
+  QWEN_TTS_API_KEY: ${QWEN_TTS_API_KEY:-}
+  QWEN_TTS_BASE_URL: ${QWEN_TTS_BASE_URL:-}
+  QWEN_TTS_WORKSPACE_ID: ${QWEN_TTS_WORKSPACE_ID:-}
+  QWEN_TTS_MODEL: ${QWEN_TTS_MODEL:-qwen3-tts-instruct-flash}
+  QWEN_TTS_VOICE: ${QWEN_TTS_VOICE:-Cherry}
+  DASHSCOPE_IMAGE_PACE_SECONDS: ${DASHSCOPE_IMAGE_PACE_SECONDS:-1.25}
+  OSS_ENDPOINT: ${OSS_ENDPOINT:?set OSS_ENDPOINT}
+  OSS_BUCKET: ${OSS_BUCKET:?set OSS_BUCKET}
+  OSS_ACCESS_KEY_ID: ${OSS_ACCESS_KEY_ID:?set OSS_ACCESS_KEY_ID}
+  OSS_ACCESS_KEY_SECRET: ${OSS_ACCESS_KEY_SECRET:?set OSS_ACCESS_KEY_SECRET}
+  OSS_PUBLIC_BASE_URL: ${OSS_PUBLIC_BASE_URL:-}
+  MAX_TOTAL_LIVE_SPEND_USD: ${MAX_TOTAL_LIVE_SPEND_USD:-40}
+  MAX_PROJECT_SPEND_USD: ${MAX_PROJECT_SPEND_USD:-15}
+  JUDGE_RUN_MAX_DURATION_SECONDS: ${JUDGE_RUN_MAX_DURATION_SECONDS:-15}
+  JUDGE_RUN_MAX_SHOTS: ${JUDGE_RUN_MAX_SHOTS:-3}
+  PUBLIC_DEMO_PROJECT_ID: ${PUBLIC_DEMO_PROJECT_ID:-}
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: directorgraph
+      POSTGRES_USER: directorgraph
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - directorgraph-postgres:/var/lib/postgresql/data
+    networks:
+      - directorgraph-db
+    logging: *bounded-logging
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U directorgraph -d directorgraph"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  api:
+    image: ${DIRECTORGRAPH_APP_IMAGE:-directorgraph-app}
+    build:
+      context: ../../services/api
+    restart: unless-stopped
+    environment:
+      <<: *api-env
+      APP_MODE: web
+    volumes:
+      - directorgraph-media:/var/lib/directorgraph/media
+    networks:
+      directorgraph-edge:
+        aliases:
+          - directorgraph-api
+      directorgraph-db: {}
+      directorgraph-internal: {}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    logging: *bounded-logging
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/readiness')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  task:
+    image: ${DIRECTORGRAPH_APP_IMAGE:-directorgraph-app}
+    build:
+      context: ../../services/api
+    restart: unless-stopped
+    environment:
+      <<: *api-env
+      APP_MODE: task
+      SEED_DEMO: "false"
+    volumes:
+      - directorgraph-media:/var/lib/directorgraph/media
+    networks:
+      - directorgraph-egress
+      - directorgraph-db
+      - directorgraph-internal
+    depends_on:
+      postgres:
+        condition: service_healthy
+    logging: *bounded-logging
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  web:
+    build:
+      context: ../../apps/web
+    restart: unless-stopped
+    networks:
+      directorgraph-edge:
+        aliases:
+          - directorgraph-web
+    depends_on:
+      api:
+        condition: service_healthy
+    logging: *bounded-logging
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1/"]
+      interval: 15s
+      timeout: 5s
+      retries: 8
+
+volumes:
+  directorgraph-postgres:
+    labels:
+      com.directorgraph.purpose: postgresql-state
+  directorgraph-media:
+    labels:
+      com.directorgraph.purpose: generated-media-cache
+
+networks:
+  directorgraph-edge:
+    external: true
+    name: directorgraph-edge
+  directorgraph-egress:
+    external: true
+    name: directorgraph-egress
+  directorgraph-db:
+    internal: true
+  directorgraph-internal:
+    internal: true

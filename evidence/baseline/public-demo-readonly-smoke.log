@@ -1,0 +1,10 @@
+{
+  "demo_id": "37500489-7588-448f-93ba-e3ceb6867cc2",
+  "demo_status": "completed",
+  "job_count_after_public_reads": 1,
+  "public_demo_project_id": "37500489-7588-448f-93ba-e3ceb6867cc2",
+  "read_only_route_prefix": "/api/public/demo",
+  "requires_completed_project": true,
+  "signed_object_count": 3,
+  "status": "passed"
+}

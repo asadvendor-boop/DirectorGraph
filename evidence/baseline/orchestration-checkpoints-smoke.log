@@ -1,0 +1,13 @@
+{
+  "expected_final_manifest_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/final/manifest.json",
+  "expected_story_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/story/story-ir.v1.json",
+  "final_manifest_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/final/manifest.json",
+  "final_manifest_project_status": "completed",
+  "audit_trail_count": 7,
+  "manifest_final_manifest_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/final/manifest.json",
+  "manifest_story_ir_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/story/story-ir.v1.json",
+  "object_key_count": 2,
+  "project_id": "122b77e2-ca42-4d31-a5e8-8573edda276d",
+  "status": "passed",
+  "story_key": "projects/122b77e2-ca42-4d31-a5e8-8573edda276d/story/story-ir.v1.json"
+}

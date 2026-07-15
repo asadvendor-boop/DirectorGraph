@@ -1,0 +1,48 @@
+[1/7] Python syntax
+[2/7] Backend tests
+............................................................             [100%]
+60 passed, 1 deselected in 1.15s
+[3/7] Frontend build
+
+> directorgraph-web@0.1.0 build
+> tsc -b && vite build
+
+vite v7.3.5 building client environment for production...
+transforming...
+✓ 30 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.58 kB │ gzip:  0.35 kB
+dist/assets/index-DqvMixuO.css   22.00 kB │ gzip:  5.31 kB
+dist/assets/index-DPKi4L3O.js   216.54 kB │ gzip: 67.54 kB
+✓ built in 307ms
+[4/7] Shell syntax
+[5/7] JSON integrity
+JSON documents valid
+[6/7] Bundled master
+{
+    "programs": [
+
+    ],
+    "stream_groups": [
+
+    ],
+    "streams": [
+        {
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+        },
+        {
+            "codec_name": "aac"
+        },
+        {
+            "codec_name": "mov_text"
+        }
+    ],
+    "format": {
+        "duration": "21.020020"
+    }
+}
+[7/7] Credential-pattern scan
+DirectorGraph validation passed.

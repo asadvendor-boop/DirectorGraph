@@ -1,0 +1,12 @@
+{
+  "event_key": "projects/smoke-project/events/20260624T080000000000Z-event-1.json",
+  "ledger_key": "projects/smoke-project/ledger/entries/20260624T080000000000Z-ledger-1.json",
+  "loaded_status": "running",
+  "manifest_etag_changed": true,
+  "manifest_key": "projects/smoke-project/manifest.json",
+  "object_store": "local-tempdir",
+  "signed_url_method": "GET",
+  "signed_url_scheme": "local-oss",
+  "stale_etag_conflict": true,
+  "status": "passed"
+}

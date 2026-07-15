@@ -1,0 +1,2 @@
+time="2026-06-24T13:34:49+05:00" level=fatal msg="limactl is running under rosetta, please reinstall lima with native arch"
+time="2026-06-24T13:34:49+05:00" level=fatal msg="lima compatibility error: error checking Lima version: exit status 1"

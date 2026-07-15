@@ -1,0 +1,137 @@
+edition: 1.0.0
+name: directorgraph-serverless
+access: ${SERVERLESS_DEVS_ACCESS}
+services:
+  directorgraph-web:
+    component: fc
+    props:
+      region: ${ALIBABA_REGION}
+      service:
+        name: ${FC_WEB_SERVICE_NAME}
+        description: DirectorGraph public HTTP/Web function
+        internetAccess: true
+        role: ${FC_RUNTIME_ROLE_ARN}
+      function:
+        name: ${FC_WEB_FUNCTION_NAME}
+        description: DirectorGraph FastAPI API and React console
+        runtime: custom-container
+        handler: not-used
+        timeout: ${FC_WEB_TIMEOUT_SECONDS}
+        memorySize: ${FC_WEB_MEMORY_MB}
+        diskSize: ${FC_WEB_DISK_MB}
+        caPort: 8000
+        instanceConcurrency: ${FC_WEB_INSTANCE_CONCURRENCY}
+        customContainerConfig:
+          image: ${ACR_IMAGE_URI}
+          command: ''
+          args: ''
+          accelerationType: Default
+          webServerMode: true
+        environmentVariables:
+          APP_MODE: web
+          STATE_BACKEND: oss
+          PROVIDER_MODE: live
+          BUILD_SHA: ${BUILD_SHA}
+          BUILD_TIMESTAMP: ${BUILD_TIMESTAMP}
+          DATABASE_URL: sqlite:////tmp/directorgraph/scratch.db
+          MEDIA_ROOT: /tmp/directorgraph/media
+          OSS_REPOSITORY_ROOT: /tmp/directorgraph/oss-repository
+          SEED_DEMO: 'false'
+          INLINE_WORKER: 'false'
+          PUBLIC_MEDIA_BASE_URL: ${PUBLIC_MEDIA_BASE_URL}
+          DASHSCOPE_API_KEY: ${DASHSCOPE_API_KEY}
+          DASHSCOPE_REGION: ${DASHSCOPE_REGION}
+          OSS_ENDPOINT: ${OSS_ENDPOINT}
+          OSS_BUCKET: ${OSS_BUCKET}
+          OSS_ACCESS_KEY_ID: ${OSS_ACCESS_KEY_ID}
+          OSS_ACCESS_KEY_SECRET: ${OSS_ACCESS_KEY_SECRET}
+          OSS_PUBLIC_BASE_URL: ${OSS_PUBLIC_BASE_URL}
+          FUNCTION_COMPUTE_TASK_URL: ${FUNCTION_COMPUTE_TASK_URL}
+          FUNCTION_COMPUTE_AUTH_HEADER: ${FUNCTION_COMPUTE_AUTH_HEADER}
+          FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS: ${FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS}
+          MAX_TOTAL_LIVE_SPEND_USD: ${MAX_TOTAL_LIVE_SPEND_USD}
+          MAX_PROJECT_SPEND_USD: ${MAX_PROJECT_SPEND_USD}
+          REPAIR_RESERVE_PERCENT: ${REPAIR_RESERVE_PERCENT}
+          MAX_RENDER_ATTEMPTS_PER_SHOT: ${MAX_RENDER_ATTEMPTS_PER_SHOT}
+          MAX_PARALLEL_RENDERS: ${MAX_PARALLEL_RENDERS}
+          JUDGE_RUN_MAX_DURATION_SECONDS: ${JUDGE_RUN_MAX_DURATION_SECONDS}
+          JUDGE_RUN_MAX_SHOTS: ${JUDGE_RUN_MAX_SHOTS}
+          PUBLIC_DEMO_PROJECT_ID: ${PUBLIC_DEMO_PROJECT_ID}
+          JUDGE_CREATE_ACCESS_CODE: ${JUDGE_CREATE_ACCESS_CODE}
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            disableURLInternet: false
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - HEAD
+              - OPTIONS
+  directorgraph-task:
+    component: fc
+    props:
+      region: ${ALIBABA_REGION}
+      service:
+        name: ${FC_TASK_SERVICE_NAME}
+        description: DirectorGraph asynchronous production task function
+        internetAccess: true
+        role: ${FC_RUNTIME_ROLE_ARN}
+      function:
+        name: ${FC_TASK_FUNCTION_NAME}
+        description: DirectorGraph provider polling, recovery, and FFmpeg assembly
+        runtime: custom-container
+        handler: not-used
+        timeout: ${FC_TASK_TIMEOUT_SECONDS}
+        memorySize: ${FC_TASK_MEMORY_MB}
+        diskSize: ${FC_TASK_DISK_MB}
+        caPort: 8000
+        instanceConcurrency: ${FC_TASK_INSTANCE_CONCURRENCY}
+        customContainerConfig:
+          image: ${ACR_IMAGE_URI}
+          command: ''
+          args: ''
+          accelerationType: Default
+          webServerMode: true
+        environmentVariables:
+          APP_MODE: task
+          STATE_BACKEND: oss
+          PROVIDER_MODE: live
+          BUILD_SHA: ${BUILD_SHA}
+          BUILD_TIMESTAMP: ${BUILD_TIMESTAMP}
+          DATABASE_URL: sqlite:////tmp/directorgraph/scratch.db
+          MEDIA_ROOT: /tmp/directorgraph/media
+          OSS_REPOSITORY_ROOT: /tmp/directorgraph/oss-repository
+          SEED_DEMO: 'false'
+          INLINE_WORKER: 'false'
+          PUBLIC_MEDIA_BASE_URL: ${PUBLIC_MEDIA_BASE_URL}
+          DASHSCOPE_API_KEY: ${DASHSCOPE_API_KEY}
+          DASHSCOPE_REGION: ${DASHSCOPE_REGION}
+          OSS_ENDPOINT: ${OSS_ENDPOINT}
+          OSS_BUCKET: ${OSS_BUCKET}
+          OSS_ACCESS_KEY_ID: ${OSS_ACCESS_KEY_ID}
+          OSS_ACCESS_KEY_SECRET: ${OSS_ACCESS_KEY_SECRET}
+          OSS_PUBLIC_BASE_URL: ${OSS_PUBLIC_BASE_URL}
+          FUNCTION_COMPUTE_TASK_URL: ${FUNCTION_COMPUTE_TASK_URL}
+          FUNCTION_COMPUTE_AUTH_HEADER: ${FUNCTION_COMPUTE_AUTH_HEADER}
+          FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS: ${FUNCTION_COMPUTE_INVOKE_TIMEOUT_SECONDS}
+          MAX_TOTAL_LIVE_SPEND_USD: ${MAX_TOTAL_LIVE_SPEND_USD}
+          MAX_PROJECT_SPEND_USD: ${MAX_PROJECT_SPEND_USD}
+          REPAIR_RESERVE_PERCENT: ${REPAIR_RESERVE_PERCENT}
+          MAX_RENDER_ATTEMPTS_PER_SHOT: ${MAX_RENDER_ATTEMPTS_PER_SHOT}
+          MAX_PARALLEL_RENDERS: ${MAX_PARALLEL_RENDERS}
+          JUDGE_RUN_MAX_DURATION_SECONDS: ${JUDGE_RUN_MAX_DURATION_SECONDS}
+          JUDGE_RUN_MAX_SHOTS: ${JUDGE_RUN_MAX_SHOTS}
+          PUBLIC_DEMO_PROJECT_ID: ${PUBLIC_DEMO_PROJECT_ID}
+          JUDGE_CREATE_ACCESS_CODE: ${JUDGE_CREATE_ACCESS_CODE}
+      triggers:
+        - name: taskHttpTrigger
+          type: http
+          config:
+            authType: anonymous
+            disableURLInternet: false
+            methods:
+              - POST

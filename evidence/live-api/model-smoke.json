@@ -1,0 +1,30 @@
+{
+  "base_url_host": "ws-q3cz9vsbgt4ypbbg.eu-central-1.maas.aliyuncs.com",
+  "configured_models": {
+    "happyhorse_video": "happyhorse-1.1-t2v",
+    "story": "qwen-plus",
+    "tts": "qwen3-tts-instruct-flash",
+    "vision": "qwen3-vl-flash",
+    "wan_image": "wan2.6-t2i",
+    "wan_video": "wan2.6-i2v"
+  },
+  "dashscope_region": "singapore",
+  "generated_at": "2026-06-28T16:17:17.695408+00:00",
+  "model": "qwen-plus",
+  "provider": "Qwen",
+  "repository_commit": "unknown",
+  "requested_at": "2026-06-28T16:17:15.274278+00:00",
+  "response": {
+    "model_route": "",
+    "note": "DirectorGraph connectivity smoke test for live submission evidence",
+    "ok": true,
+    "service": "directorgraph-live-api-smoke"
+  },
+  "schema": "directorgraph.live-api-smoke.v1",
+  "status": "pass",
+  "usage": {
+    "completion_tokens": 29,
+    "prompt_tokens": 61,
+    "total_tokens": 90
+  }
+}

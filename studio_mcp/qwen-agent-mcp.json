@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "directorgraph-studio": {
+      "command": "python",
+      "args": ["studio_mcp/server.py"]
+    }
+  }
+}

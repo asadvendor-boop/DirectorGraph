@@ -1,0 +1,24 @@
+queued_task=dg-run-project-bdb91ca85ca2379b5b2c0a9a
+{"status": "processed", "job_id": "b4880f17-c2f0-4e3d-8ca6-50ed20e222dc", "task_id": "dg-run-project-bdb91ca85ca2379b5b2c0a9a"}
+{
+  "project_id": "a8dcc1a4-df6d-4dd5-b125-53e51ffc8d30",
+  "project_status": "completed",
+  "job_id": "b4880f17-c2f0-4e3d-8ca6-50ed20e222dc",
+  "task_id": "dg-run-project-bdb91ca85ca2379b5b2c0a9a",
+  "job_status": "succeeded",
+  "final_video_url": "http://localhost:8000/media/projects/a8dcc1a4-df6d-4dd5-b125-53e51ffc8d30/final/directorgraph-master.mp4",
+  "ledger": {
+    "text_input_tokens": 1850,
+    "text_output_tokens": 3120,
+    "vision_input_tokens": 4320,
+    "video_seconds_generated": 24.0,
+    "video_seconds_accepted": 21.0,
+    "rejected_generation_seconds": 3.0,
+    "image_count": 9,
+    "full_regenerations": 0,
+    "local_repairs": 1,
+    "estimated_cost_usd": 3.4221,
+    "budget_usd": 18.0,
+    "repair_reserve_usd": 3.24
+  }
+}

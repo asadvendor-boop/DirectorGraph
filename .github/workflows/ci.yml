@@ -1,0 +1,80 @@
+name: DirectorGraph CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/api/pyproject.toml
+      - name: Install API and development tools
+        run: python -m pip install -e 'services/api[dev]'
+      - name: Compile Python
+        run: python -m compileall -q services/api/app studio_mcp evals scripts/check-private-oss-access.py scripts/check-submission-artifacts.py scripts/check-architecture-assets.py scripts/check-media-contract.py scripts/run-deployment-task-smoke.py scripts/run-live-api-smoke.py scripts/verify-source-archive.py scripts/write-function-min-instances.py scripts/write-image-digest.py scripts/write-live-evaluation.py scripts/write-public-links.py
+      - name: Lint Python
+        run: ruff check services/api/app services/api/tests evals studio_mcp
+      - name: Test backend
+        working-directory: services/api
+        run: pytest -q -m 'not integration'
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install frontend
+        working-directory: apps/web
+        run: npm ci
+      - name: Type-check and build
+        working-directory: apps/web
+        run: npm run build
+      - name: Install Playwright browser
+        working-directory: apps/web
+        run: npx playwright install chromium
+      - name: Browser e2e
+        working-directory: apps/web
+        run: npm run test:e2e
+
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate shell and JSON assets
+        run: |
+          for script in \
+            infra/alibaba/deploy-ecs.sh \
+            infra/alibaba/verify-deployment.sh \
+            scripts/build-source-archive.sh \
+            scripts/deploy-serverless.sh \
+            scripts/run-image-vulnerability-scan.sh \
+            scripts/run-dependency-audit.sh \
+            scripts/verify-serverless-deployment.sh \
+            scripts/validate.sh; do
+            bash -n "$script"
+          done
+          python -m py_compile scripts/check-private-oss-access.py scripts/check-submission-artifacts.py scripts/check-architecture-assets.py scripts/check-media-contract.py scripts/run-deployment-task-smoke.py scripts/run-live-api-smoke.py scripts/verify-source-archive.py scripts/write-function-min-instances.py scripts/write-image-digest.py scripts/write-live-evaluation.py scripts/write-public-links.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('.').rglob('*.json'):
+              if 'node_modules' not in path.parts:
+                  json.loads(path.read_text(encoding='utf-8'))
+          PY
+      - name: Scan tracked source for common credential patterns
+        run: |
+          ! grep -RInE --exclude-dir=.git --exclude-dir=node_modules --exclude='*.lock' \
+            '(AKID[A-Za-z0-9]{12,}|sk-[A-Za-z0-9]{20,}|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY)' .

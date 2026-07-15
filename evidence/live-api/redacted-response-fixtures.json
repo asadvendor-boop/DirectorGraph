@@ -1,0 +1,63 @@
+{
+  "fixtures": [
+    {
+      "endpoint_host": "ws-q3cz9vsbgt4ypbbg.eu-central-1.maas.aliyuncs.com",
+      "provider": "Qwen",
+      "request": {
+        "extra_body": {
+          "enable_thinking": false
+        },
+        "max_tokens": "[REDACTED]",
+        "messages": [
+          {
+            "content": "Return compact JSON only. This is a low-cost DirectorGraph connectivity smoke for live submission evidence.",
+            "role": "system"
+          },
+          {
+            "content": "Return JSON with keys ok, service, model_route, and note. Use ok=true and service='directorgraph-live-api-smoke'.",
+            "role": "user"
+          }
+        ],
+        "model": "qwen-plus",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "annotations": null,
+              "audio": null,
+              "content": "{\"ok\":true,\"service\":\"directorgraph-live-api-smoke\",\"model_route\":\"\",\"note\":\"DirectorGraph connectivity smoke test for live submission evidence\"}",
+              "function_call": null,
+              "refusal": null,
+              "role": "assistant",
+              "tool_calls": null
+            }
+          }
+        ],
+        "created": 1782663436,
+        "id": "chatcmpl-0599c9c6-2bbe-98df-99c0-016592cc3fe7",
+        "model": "qwen-plus",
+        "moderation": null,
+        "object": "chat.completion",
+        "service_tier": null,
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": "[REDACTED]",
+          "completion_tokens_details": "[REDACTED]",
+          "prompt_tokens": "[REDACTED]",
+          "prompt_tokens_details": "[REDACTED]",
+          "total_tokens": "[REDACTED]"
+        }
+      }
+    }
+  ],
+  "generated_at": "2026-06-28T16:17:17.696349+00:00",
+  "repository_commit": "unknown",
+  "schema": "directorgraph.redacted-provider-fixtures.v1"
+}

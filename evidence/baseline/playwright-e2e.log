@@ -1,0 +1,20 @@
+
+> directorgraph-web@0.1.0 test:e2e
+> playwright test
+
+[WebServer]
+[WebServer] > directorgraph-web@0.1.0 dev
+[WebServer] > vite --host 127.0.0.1
+[WebServer]
+[WebServer]
+[WebServer]   VITE v7.3.5  ready in 71 ms
+[WebServer]
+[WebServer]   ➜  Local:   http://127.0.0.1:5173/
+
+Running 3 tests using 1 worker
+
+  ✓  1 e2e/directorgraph.spec.ts:185:1 › public demo is read-only and judge test submits with server-side access code (234ms)
+  ✓  2 e2e/directorgraph.spec.ts:206:1 › active task polling recovers after refresh from browser storage (232ms)
+  ✓  3 e2e/directorgraph.spec.ts:225:1 › semantic patch request starts a deterministic task from completed project (168ms)
+
+  3 passed (1.4s)

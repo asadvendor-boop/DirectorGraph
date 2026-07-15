@@ -1,0 +1,1 @@
+rendered serverless template uses one image, split APP_MODE values, scratch sqlite, disabled seed demo, and disabled inline worker

@@ -1,0 +1,23 @@
+queued_job=70b700aa-ea6a-419b-8d15-9947d4f36086
+{"status": "processed", "job_id": "70b700aa-ea6a-419b-8d15-9947d4f36086"}
+{
+  "project_id": "69274fc9-3dfa-4154-b725-de6dbf3bc167",
+  "project_status": "completed",
+  "job_id": "70b700aa-ea6a-419b-8d15-9947d4f36086",
+  "job_status": "succeeded",
+  "final_video_url": "http://localhost:8000/media/projects/69274fc9-3dfa-4154-b725-de6dbf3bc167/final/directorgraph-master.mp4",
+  "ledger": {
+    "text_input_tokens": 1850,
+    "text_output_tokens": 3120,
+    "vision_input_tokens": 4320,
+    "video_seconds_generated": 24.0,
+    "video_seconds_accepted": 21.0,
+    "rejected_generation_seconds": 3.0,
+    "image_count": 9,
+    "full_regenerations": 0,
+    "local_repairs": 1,
+    "estimated_cost_usd": 3.4221,
+    "budget_usd": 18.0,
+    "repair_reserve_usd": 3.24
+  }
+}

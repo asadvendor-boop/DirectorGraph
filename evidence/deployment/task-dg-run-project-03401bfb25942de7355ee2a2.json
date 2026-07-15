@@ -1,0 +1,38 @@
+{
+  "id": "1010387b-dacd-43f5-9e86-f555deff3796",
+  "task_id": "dg-run-project-03401bfb25942de7355ee2a2",
+  "project_id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f",
+  "type": "run_project",
+  "status": "succeeded",
+  "attempts": 1,
+  "result": {
+    "project_id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f",
+    "final_object_key": "projects/3dceb19e-2c3e-4892-b8b8-ae0333bedd5f/final/directorgraph-master.mp4"
+  },
+  "error": null,
+  "function_compute_request_id": null,
+  "durable_status": {
+    "attempts": 1,
+    "dispatch_mode": "function-compute",
+    "duplicate": false,
+    "error": null,
+    "function_compute_request_id": null,
+    "function_compute_status_code": 202,
+    "job_id": "1010387b-dacd-43f5-9e86-f555deff3796",
+    "operation": "run_project",
+    "project_id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f",
+    "result": {
+      "final_object_key": "projects/3dceb19e-2c3e-4892-b8b8-ae0333bedd5f/final/directorgraph-master.mp4",
+      "media_refs": {
+        "final": {
+          "object_key": "projects/3dceb19e-2c3e-4892-b8b8-ae0333bedd5f/final/directorgraph-master.mp4"
+        }
+      },
+      "project_id": "3dceb19e-2c3e-4892-b8b8-ae0333bedd5f"
+    },
+    "schema_version": "directorgraph.task-status.v1",
+    "status": "succeeded",
+    "task_id": "dg-run-project-03401bfb25942de7355ee2a2",
+    "updated_at": "2026-06-28T16:47:30.927718Z"
+  }
+}
